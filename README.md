@@ -1,7 +1,7 @@
 RiotKit
 =======
 
-RiotKit is an Objective-C wrapper around the Riot Games Developer API, currently exposing player and stat data from League of Legends. A part from its aim for API parity, RiotKit keeps developer happiness in mind. All requests are kept off the main thread and conducted through NSOperations and JSON reponses are transformed into pure Objective-C object. All you have to worry about is what you want to do with all the awesome data.
+RiotKit is an Objective-C wrapper around the Riot Games Developer API, currently exposing player and stat data from League of Legends. Apart from its aim for API parity, RiotKit keeps developer happiness in mind. All requests are kept off the main thread and conducted through NSOperations and JSON reponses are transformed into pure Objective-C object. All you have to worry about is what you want to do with all the awesome data.
 
 ***NOTE:*** RiotKit is still in its early stages and not recommended for production use. Many APIs are stubbed out as of now.
 
