@@ -12,7 +12,7 @@
 
 #import "RiotKit.h"
 
-static NSString * const kTestAPIKey = @"c24eb98c-529a-4b06-a860-5b051d6dddd6";
+static NSString * const kTestAPIKey = @"TEST_KEY_HERE";
 static NSTimeInterval kRequestTimeout = 5.0;
 
 @interface RiotKitTests : XCTestCase

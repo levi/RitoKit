@@ -74,7 +74,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 
 - (NSOperation *)getChampionWithID:(NSInteger)championID block:(RKChampionResultBlock)completion
 {
-    NSString *part = [NSString stringWithFormat:@"%@/%d", RKChampionEndpoint, championID];
+    NSString *part = [NSString stringWithFormat:@"%@/%ld", RKChampionEndpoint, (long)championID];
     return [self sendGetRequestWithURLPart:part version:RKChampionVersion parameters:nil block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);

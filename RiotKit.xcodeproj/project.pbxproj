@@ -12,8 +12,6 @@
 		9BB2BFEB196B651000D9FEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFEA196B651000D9FEAA /* main.m */; };
 		9BB2BFEE196B651000D9FEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFED196B651000D9FEAA /* AppDelegate.m */; };
 		9BB2BFF1196B651000D9FEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFF0196B651000D9FEAA /* ViewController.m */; };
-		9BB2BFF4196B651000D9FEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2BFF2196B651000D9FEAA /* Main.storyboard */; };
-		9BB2BFF6196B651000D9FEAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2BFF5196B651000D9FEAA /* Images.xcassets */; };
 		9BB2C00D196B679000D9FEAA /* RKChampion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C00C196B679000D9FEAA /* RKChampion.m */; };
 		9BB2C010196B680C00D9FEAA /* RKGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C00F196B680C00D9FEAA /* RKGame.m */; };
 		9BB2C013196B6A4E00D9FEAA /* RKPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C012196B6A4E00D9FEAA /* RKPlayer.m */; };
@@ -39,6 +37,7 @@
 		9BB2C052196CA53800D9FEAA /* RKOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C051196CA53800D9FEAA /* RKOperation.m */; };
 		9BB2C059196DCB8400D9FEAA /* RiotKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C001196B651000D9FEAA /* RiotKitTests.m */; };
 		9BD8B2CF19736CEA00C7F22E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BD8B2CE19736CEA00C7F22E /* README.md */; };
+		9BD8B2D1197371D400C7F22E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD8B2D0197371D400C7F22E /* Main.storyboard */; };
 		E937F239D650422F983044DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3C486FF5594279BB6C5E9A /* libPods.a */; };
 		EA37B31048724B72A9F28D3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3C486FF5594279BB6C5E9A /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -76,68 +75,67 @@
 
 /* Begin PBXFileReference section */
 		43F53129214E4A779E3317EE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		9B19A021196E1122009AA715 /* RKObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMapper.h; path = Classes/RKObjectMapper.h; sourceTree = "<group>"; };
-		9B19A022196E1122009AA715 /* RKObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKObjectMapper.m; path = Classes/RKObjectMapper.m; sourceTree = "<group>"; };
+		9B19A021196E1122009AA715 /* RKObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMapper.h; path = Classes/RKObjectMapper.h; sourceTree = SOURCE_ROOT; };
+		9B19A022196E1122009AA715 /* RKObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKObjectMapper.m; path = Classes/RKObjectMapper.m; sourceTree = SOURCE_ROOT; };
 		9BB2BFE5196B651000D9FEAA /* RiotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BB2BFE9196B651000D9FEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = RiotKitDemo/Info.plist; sourceTree = "<group>"; };
-		9BB2BFEA196B651000D9FEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RiotKitDemo/main.m; sourceTree = "<group>"; };
-		9BB2BFEC196B651000D9FEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RiotKitDemo/AppDelegate.h; sourceTree = "<group>"; };
-		9BB2BFED196B651000D9FEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RiotKitDemo/AppDelegate.m; sourceTree = "<group>"; };
-		9BB2BFEF196B651000D9FEAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RiotKitDemo/ViewController.h; sourceTree = "<group>"; };
-		9BB2BFF0196B651000D9FEAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = RiotKitDemo/ViewController.m; sourceTree = "<group>"; };
-		9BB2BFF3196B651000D9FEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9BB2BFF5196B651000D9FEAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RiotKitDemo/Images.xcassets; sourceTree = "<group>"; };
+		9BB2BFEA196B651000D9FEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RiotKitDemo/main.m; sourceTree = SOURCE_ROOT; };
+		9BB2BFEC196B651000D9FEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RiotKitDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		9BB2BFED196B651000D9FEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RiotKitDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		9BB2BFEF196B651000D9FEAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RiotKitDemo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		9BB2BFF0196B651000D9FEAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = RiotKitDemo/ViewController.m; sourceTree = SOURCE_ROOT; };
 		9BB2BFFB196B651000D9FEAA /* RiotKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiotKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB2C000196B651000D9FEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB2C001196B651000D9FEAA /* RiotKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiotKitTests.m; sourceTree = "<group>"; };
-		9BB2C00B196B679000D9FEAA /* RKChampion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKChampion.h; path = Classes/Models/RKChampion.h; sourceTree = "<group>"; };
-		9BB2C00C196B679000D9FEAA /* RKChampion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKChampion.m; path = Classes/Models/RKChampion.m; sourceTree = "<group>"; };
-		9BB2C00E196B680C00D9FEAA /* RKGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKGame.h; path = Classes/Models/RKGame.h; sourceTree = "<group>"; };
-		9BB2C00F196B680C00D9FEAA /* RKGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKGame.m; path = Classes/Models/RKGame.m; sourceTree = "<group>"; };
-		9BB2C011196B6A4E00D9FEAA /* RKPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPlayer.h; path = Classes/Models/RKPlayer.h; sourceTree = "<group>"; };
-		9BB2C012196B6A4E00D9FEAA /* RKPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKPlayer.m; path = Classes/Models/RKPlayer.m; sourceTree = "<group>"; };
-		9BB2C014196B6B5200D9FEAA /* RKRawStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRawStats.h; path = Classes/Models/RKRawStats.h; sourceTree = "<group>"; };
-		9BB2C015196B6B5200D9FEAA /* RKRawStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRawStats.m; path = Classes/Models/RKRawStats.m; sourceTree = "<group>"; };
-		9BB2C017196B6CB800D9FEAA /* RKLeague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKLeague.h; path = Classes/Models/RKLeague.h; sourceTree = "<group>"; };
-		9BB2C018196B6CB800D9FEAA /* RKLeague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKLeague.m; path = Classes/Models/RKLeague.m; sourceTree = "<group>"; };
-		9BB2C01A196B6D9500D9FEAA /* RKLeagueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKLeagueEntry.h; path = Classes/Models/RKLeagueEntry.h; sourceTree = "<group>"; };
-		9BB2C01B196B6D9500D9FEAA /* RKLeagueEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKLeagueEntry.m; path = Classes/Models/RKLeagueEntry.m; sourceTree = "<group>"; };
-		9BB2C01D196B6E5600D9FEAA /* RKMiniSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMiniSeries.h; path = Classes/Models/RKMiniSeries.h; sourceTree = "<group>"; };
-		9BB2C01E196B6E5600D9FEAA /* RKMiniSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMiniSeries.m; path = Classes/Models/RKMiniSeries.m; sourceTree = "<group>"; };
-		9BB2C021196C6F2200D9FEAA /* RKTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTeam.h; path = Classes/Models/RKTeam.h; sourceTree = "<group>"; };
-		9BB2C022196C6F2200D9FEAA /* RKTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKTeam.m; path = Classes/Models/RKTeam.m; sourceTree = "<group>"; };
-		9BB2C024196C6FD800D9FEAA /* RKRoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRoster.h; path = Classes/Models/RKRoster.h; sourceTree = "<group>"; };
-		9BB2C025196C6FD800D9FEAA /* RKRoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRoster.m; path = Classes/Models/RKRoster.m; sourceTree = "<group>"; };
-		9BB2C027196C704800D9FEAA /* RKMatchHistorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMatchHistorySummary.h; path = Classes/Models/RKMatchHistorySummary.h; sourceTree = "<group>"; };
-		9BB2C028196C704800D9FEAA /* RKMatchHistorySummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMatchHistorySummary.m; path = Classes/Models/RKMatchHistorySummary.m; sourceTree = "<group>"; };
-		9BB2C02A196C713A00D9FEAA /* RKTeamStatDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTeamStatDetail.h; path = Classes/Models/RKTeamStatDetail.h; sourceTree = "<group>"; };
-		9BB2C02B196C713A00D9FEAA /* RKTeamStatDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKTeamStatDetail.m; path = Classes/Models/RKTeamStatDetail.m; sourceTree = "<group>"; };
-		9BB2C02D196C746900D9FEAA /* RKTeamMemberInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTeamMemberInfo.h; path = Classes/Models/RKTeamMemberInfo.h; sourceTree = "<group>"; };
-		9BB2C02E196C746900D9FEAA /* RKTeamMemberInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKTeamMemberInfo.m; path = Classes/Models/RKTeamMemberInfo.m; sourceTree = "<group>"; };
-		9BB2C030196C751600D9FEAA /* RKRunePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRunePage.h; path = Classes/Models/RKRunePage.h; sourceTree = "<group>"; };
-		9BB2C031196C751600D9FEAA /* RKRunePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRunePage.m; path = Classes/Models/RKRunePage.m; sourceTree = "<group>"; };
-		9BB2C033196C755600D9FEAA /* RKRuneSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRuneSlot.h; path = Classes/Models/RKRuneSlot.h; sourceTree = "<group>"; };
-		9BB2C034196C755600D9FEAA /* RKRuneSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRuneSlot.m; path = Classes/Models/RKRuneSlot.m; sourceTree = "<group>"; };
-		9BB2C036196C759400D9FEAA /* RKMasteryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMasteryPage.h; path = Classes/Models/RKMasteryPage.h; sourceTree = "<group>"; };
-		9BB2C037196C759400D9FEAA /* RKMasteryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMasteryPage.m; path = Classes/Models/RKMasteryPage.m; sourceTree = "<group>"; };
-		9BB2C039196C75C900D9FEAA /* RKMastery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMastery.h; path = Classes/Models/RKMastery.h; sourceTree = "<group>"; };
-		9BB2C03A196C75C900D9FEAA /* RKMastery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMastery.m; path = Classes/Models/RKMastery.m; sourceTree = "<group>"; };
-		9BB2C03C196C760100D9FEAA /* RKSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSummoner.h; path = Classes/Models/RKSummoner.h; sourceTree = "<group>"; };
-		9BB2C03D196C760100D9FEAA /* RKSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKSummoner.m; path = Classes/Models/RKSummoner.m; sourceTree = "<group>"; };
-		9BB2C03F196C769700D9FEAA /* RKPlayerStatsSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPlayerStatsSummary.h; path = Classes/Models/RKPlayerStatsSummary.h; sourceTree = "<group>"; };
-		9BB2C040196C769700D9FEAA /* RKPlayerStatsSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKPlayerStatsSummary.m; path = Classes/Models/RKPlayerStatsSummary.m; sourceTree = "<group>"; };
-		9BB2C042196C77B900D9FEAA /* RKAggregatedStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKAggregatedStats.h; path = Classes/Models/RKAggregatedStats.h; sourceTree = "<group>"; };
-		9BB2C043196C77B900D9FEAA /* RKAggregatedStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKAggregatedStats.m; path = Classes/Models/RKAggregatedStats.m; sourceTree = "<group>"; };
-		9BB2C045196C7A2400D9FEAA /* RKRankedStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRankedStats.h; path = Classes/Models/RKRankedStats.h; sourceTree = "<group>"; };
-		9BB2C046196C7A2400D9FEAA /* RKRankedStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRankedStats.m; path = Classes/Models/RKRankedStats.m; sourceTree = "<group>"; };
-		9BB2C048196C7A5B00D9FEAA /* RKChampionStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKChampionStats.h; path = Classes/Models/RKChampionStats.h; sourceTree = "<group>"; };
-		9BB2C049196C7A5B00D9FEAA /* RKChampionStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKChampionStats.m; path = Classes/Models/RKChampionStats.m; sourceTree = "<group>"; };
-		9BB2C04C196C7FA400D9FEAA /* RiotKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RiotKit.h; path = Classes/RiotKit.h; sourceTree = "<group>"; };
-		9BB2C04D196C7FA400D9FEAA /* RiotKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RiotKit.m; path = Classes/RiotKit.m; sourceTree = "<group>"; };
-		9BB2C04F196C816300D9FEAA /* RKModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKModels.h; path = Classes/Models/RKModels.h; sourceTree = "<group>"; };
-		9BB2C050196CA53800D9FEAA /* RKOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKOperation.h; path = Classes/RKOperation.h; sourceTree = "<group>"; };
-		9BB2C051196CA53800D9FEAA /* RKOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKOperation.m; path = Classes/RKOperation.m; sourceTree = "<group>"; };
+		9BB2C00B196B679000D9FEAA /* RKChampion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKChampion.h; path = Classes/Models/RKChampion.h; sourceTree = SOURCE_ROOT; };
+		9BB2C00C196B679000D9FEAA /* RKChampion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKChampion.m; path = Classes/Models/RKChampion.m; sourceTree = SOURCE_ROOT; };
+		9BB2C00E196B680C00D9FEAA /* RKGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKGame.h; path = Classes/Models/RKGame.h; sourceTree = SOURCE_ROOT; };
+		9BB2C00F196B680C00D9FEAA /* RKGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKGame.m; path = Classes/Models/RKGame.m; sourceTree = SOURCE_ROOT; };
+		9BB2C011196B6A4E00D9FEAA /* RKPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPlayer.h; path = Classes/Models/RKPlayer.h; sourceTree = SOURCE_ROOT; };
+		9BB2C012196B6A4E00D9FEAA /* RKPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKPlayer.m; path = Classes/Models/RKPlayer.m; sourceTree = SOURCE_ROOT; };
+		9BB2C014196B6B5200D9FEAA /* RKRawStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRawStats.h; path = Classes/Models/RKRawStats.h; sourceTree = SOURCE_ROOT; };
+		9BB2C015196B6B5200D9FEAA /* RKRawStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRawStats.m; path = Classes/Models/RKRawStats.m; sourceTree = SOURCE_ROOT; };
+		9BB2C017196B6CB800D9FEAA /* RKLeague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKLeague.h; path = Classes/Models/RKLeague.h; sourceTree = SOURCE_ROOT; };
+		9BB2C018196B6CB800D9FEAA /* RKLeague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKLeague.m; path = Classes/Models/RKLeague.m; sourceTree = SOURCE_ROOT; };
+		9BB2C01A196B6D9500D9FEAA /* RKLeagueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKLeagueEntry.h; path = Classes/Models/RKLeagueEntry.h; sourceTree = SOURCE_ROOT; };
+		9BB2C01B196B6D9500D9FEAA /* RKLeagueEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKLeagueEntry.m; path = Classes/Models/RKLeagueEntry.m; sourceTree = SOURCE_ROOT; };
+		9BB2C01D196B6E5600D9FEAA /* RKMiniSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMiniSeries.h; path = Classes/Models/RKMiniSeries.h; sourceTree = SOURCE_ROOT; };
+		9BB2C01E196B6E5600D9FEAA /* RKMiniSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMiniSeries.m; path = Classes/Models/RKMiniSeries.m; sourceTree = SOURCE_ROOT; };
+		9BB2C021196C6F2200D9FEAA /* RKTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTeam.h; path = Classes/Models/RKTeam.h; sourceTree = SOURCE_ROOT; };
+		9BB2C022196C6F2200D9FEAA /* RKTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKTeam.m; path = Classes/Models/RKTeam.m; sourceTree = SOURCE_ROOT; };
+		9BB2C024196C6FD800D9FEAA /* RKRoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRoster.h; path = Classes/Models/RKRoster.h; sourceTree = SOURCE_ROOT; };
+		9BB2C025196C6FD800D9FEAA /* RKRoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRoster.m; path = Classes/Models/RKRoster.m; sourceTree = SOURCE_ROOT; };
+		9BB2C027196C704800D9FEAA /* RKMatchHistorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMatchHistorySummary.h; path = Classes/Models/RKMatchHistorySummary.h; sourceTree = SOURCE_ROOT; };
+		9BB2C028196C704800D9FEAA /* RKMatchHistorySummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMatchHistorySummary.m; path = Classes/Models/RKMatchHistorySummary.m; sourceTree = SOURCE_ROOT; };
+		9BB2C02A196C713A00D9FEAA /* RKTeamStatDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTeamStatDetail.h; path = Classes/Models/RKTeamStatDetail.h; sourceTree = SOURCE_ROOT; };
+		9BB2C02B196C713A00D9FEAA /* RKTeamStatDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKTeamStatDetail.m; path = Classes/Models/RKTeamStatDetail.m; sourceTree = SOURCE_ROOT; };
+		9BB2C02D196C746900D9FEAA /* RKTeamMemberInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKTeamMemberInfo.h; path = Classes/Models/RKTeamMemberInfo.h; sourceTree = SOURCE_ROOT; };
+		9BB2C02E196C746900D9FEAA /* RKTeamMemberInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKTeamMemberInfo.m; path = Classes/Models/RKTeamMemberInfo.m; sourceTree = SOURCE_ROOT; };
+		9BB2C030196C751600D9FEAA /* RKRunePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRunePage.h; path = Classes/Models/RKRunePage.h; sourceTree = SOURCE_ROOT; };
+		9BB2C031196C751600D9FEAA /* RKRunePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRunePage.m; path = Classes/Models/RKRunePage.m; sourceTree = SOURCE_ROOT; };
+		9BB2C033196C755600D9FEAA /* RKRuneSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRuneSlot.h; path = Classes/Models/RKRuneSlot.h; sourceTree = SOURCE_ROOT; };
+		9BB2C034196C755600D9FEAA /* RKRuneSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRuneSlot.m; path = Classes/Models/RKRuneSlot.m; sourceTree = SOURCE_ROOT; };
+		9BB2C036196C759400D9FEAA /* RKMasteryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMasteryPage.h; path = Classes/Models/RKMasteryPage.h; sourceTree = SOURCE_ROOT; };
+		9BB2C037196C759400D9FEAA /* RKMasteryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMasteryPage.m; path = Classes/Models/RKMasteryPage.m; sourceTree = SOURCE_ROOT; };
+		9BB2C039196C75C900D9FEAA /* RKMastery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMastery.h; path = Classes/Models/RKMastery.h; sourceTree = SOURCE_ROOT; };
+		9BB2C03A196C75C900D9FEAA /* RKMastery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMastery.m; path = Classes/Models/RKMastery.m; sourceTree = SOURCE_ROOT; };
+		9BB2C03C196C760100D9FEAA /* RKSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSummoner.h; path = Classes/Models/RKSummoner.h; sourceTree = SOURCE_ROOT; };
+		9BB2C03D196C760100D9FEAA /* RKSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKSummoner.m; path = Classes/Models/RKSummoner.m; sourceTree = SOURCE_ROOT; };
+		9BB2C03F196C769700D9FEAA /* RKPlayerStatsSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPlayerStatsSummary.h; path = Classes/Models/RKPlayerStatsSummary.h; sourceTree = SOURCE_ROOT; };
+		9BB2C040196C769700D9FEAA /* RKPlayerStatsSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKPlayerStatsSummary.m; path = Classes/Models/RKPlayerStatsSummary.m; sourceTree = SOURCE_ROOT; };
+		9BB2C042196C77B900D9FEAA /* RKAggregatedStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKAggregatedStats.h; path = Classes/Models/RKAggregatedStats.h; sourceTree = SOURCE_ROOT; };
+		9BB2C043196C77B900D9FEAA /* RKAggregatedStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKAggregatedStats.m; path = Classes/Models/RKAggregatedStats.m; sourceTree = SOURCE_ROOT; };
+		9BB2C045196C7A2400D9FEAA /* RKRankedStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRankedStats.h; path = Classes/Models/RKRankedStats.h; sourceTree = SOURCE_ROOT; };
+		9BB2C046196C7A2400D9FEAA /* RKRankedStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRankedStats.m; path = Classes/Models/RKRankedStats.m; sourceTree = SOURCE_ROOT; };
+		9BB2C048196C7A5B00D9FEAA /* RKChampionStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKChampionStats.h; path = Classes/Models/RKChampionStats.h; sourceTree = SOURCE_ROOT; };
+		9BB2C049196C7A5B00D9FEAA /* RKChampionStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKChampionStats.m; path = Classes/Models/RKChampionStats.m; sourceTree = SOURCE_ROOT; };
+		9BB2C04C196C7FA400D9FEAA /* RiotKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RiotKit.h; path = Classes/RiotKit.h; sourceTree = SOURCE_ROOT; };
+		9BB2C04D196C7FA400D9FEAA /* RiotKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RiotKit.m; path = Classes/RiotKit.m; sourceTree = SOURCE_ROOT; };
+		9BB2C04F196C816300D9FEAA /* RKModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKModels.h; path = Classes/Models/RKModels.h; sourceTree = SOURCE_ROOT; };
+		9BB2C050196CA53800D9FEAA /* RKOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKOperation.h; path = Classes/RKOperation.h; sourceTree = SOURCE_ROOT; };
+		9BB2C051196CA53800D9FEAA /* RKOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKOperation.m; path = Classes/RKOperation.m; sourceTree = SOURCE_ROOT; };
 		9BD8B2CE19736CEA00C7F22E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		9BD8B2D0197371D400C7F22E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = RiotKitDemo/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		9BD8B2D21973722400C7F22E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiotKitDemo/Info.plist; sourceTree = SOURCE_ROOT; };
 		CF3C486FF5594279BB6C5E9A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -189,9 +187,8 @@
 				9BB2BFED196B651000D9FEAA /* AppDelegate.m */,
 				9BB2BFEF196B651000D9FEAA /* ViewController.h */,
 				9BB2BFF0196B651000D9FEAA /* ViewController.m */,
-				9BB2BFF2196B651000D9FEAA /* Main.storyboard */,
-				9BB2BFF5196B651000D9FEAA /* Images.xcassets */,
 				9BB2BFE8196B651000D9FEAA /* Supporting Files */,
+				9BD8B2D0197371D400C7F22E /* Main.storyboard */,
 			);
 			name = "Demo App";
 			path = RiotKit;
@@ -200,7 +197,7 @@
 		9BB2BFE8196B651000D9FEAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9BB2BFE9196B651000D9FEAA /* Info.plist */,
+				9BD8B2D21973722400C7F22E /* Info.plist */,
 				9BB2BFEA196B651000D9FEAA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -384,9 +381,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD8B2D1197371D400C7F22E /* Main.storyboard in Resources */,
 				9BD8B2CF19736CEA00C7F22E /* README.md in Resources */,
-				9BB2BFF4196B651000D9FEAA /* Main.storyboard in Resources */,
-				9BB2BFF6196B651000D9FEAA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,18 +527,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		9BB2BFF2196B651000D9FEAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9BB2BFF3196B651000D9FEAA /* Base */,
-			);
-			name = Main.storyboard;
-			path = RiotKitDemo;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		9BB2C003196B651000D9FEAA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -626,7 +610,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = RiotKit/Info.plist;
+				INFOPLIST_FILE = RiotKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,7 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = RiotKit/Info.plist;
+				INFOPLIST_FILE = RiotKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
