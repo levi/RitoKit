@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RiotKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "An Objective-C wrapper for the Riot Games Developer API."
   s.homepage     = "https://github.com/stillmotion/RiotKit"
   s.license      = "MIT"

@@ -7,7 +7,23 @@
 //
 
 #import "RKRoster.h"
+#import "RKTeamMemberInfo.h"
 
 @implementation RKRoster
+
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"memberList": RKMappingKey(members),
+        @"ownerId": RKMappingKey(ownerID),
+    };
+}
+
++ (NSDictionary *)arrayKeyMapping
+{
+    return @{
+        @"memberList": RKTeamMemberInfo.class,
+    };
+}
 
 @end

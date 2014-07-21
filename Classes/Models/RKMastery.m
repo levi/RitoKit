@@ -10,4 +10,12 @@
 
 @implementation RKMastery
 
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"id": RKMappingKey(ID),
+        @"rank": RKMappingKey(rank)
+    };
+}
+
 @end

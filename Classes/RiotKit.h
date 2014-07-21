@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "RKModels.h"
 
 extern NSString * const RKRegionBrazil;
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, RKErrorCode) {
 };
 
 typedef void (^RKChampionsResultBlock)(NSArray *champions, NSError *error);
-typedef void (^RKDiciontaryResultBlock)(NSDictionary *objects, NSError *error);
+typedef void (^RKDictionaryResultBlock)(NSDictionary *objects, NSError *error);
 typedef void (^RKRecentGamesResultBlock)(NSInteger, NSArray *, NSError *error);
 typedef void (^RKChampionResultBlock)(RKChampion *champion, NSError *error);
 typedef void (^RKRankedStatsResultBlock)(RKRankedStats *rankedStats, NSError *error);
@@ -74,19 +74,19 @@ typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
 //
 ///** Retrive leagues summoners belong to, mapped by summoner ID.
 // */
-//- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion;
+//- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
 //
 ///** Retrive league entries, mapped by summoner ID.
 // */
-//- (NSOperation *)getLeagueEntriesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion;
+//- (NSOperation *)getLeagueEntriesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
 //
 ///** Retrive leagues teams belong to, mapped by team ID.
 // */
-//- (NSOperation *)getLeaguesWithTeamIDs:(NSArray *)teamIDs block:(RKDiciontaryResultBlock)completion;
+//- (NSOperation *)getLeaguesWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion;
 //
 ///** Retrive league entries, mapped by team ID.
 // */
-//- (NSOperation *)getLeagueEntriesWithTeamIDs:(NSArray *)teamIDs block:(RKDiciontaryResultBlock)completion;
+//- (NSOperation *)getLeagueEntriesWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion;
 //
 ///** Retrive a challenger league of a certain game type, with associated league entires.
 // */
@@ -102,31 +102,31 @@ typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
 
 /** Retrive profile information for a given set of summoner names.
  */
-- (NSOperation *)getSummonersWithNames:(NSArray *)summonerNames block:(RKDiciontaryResultBlock)completion;
+- (NSOperation *)getSummonersWithNames:(NSArray *)summonerNames block:(RKDictionaryResultBlock)completion;
 
 /** Retrive profile information for a given set of summoner IDs.
  */
-- (NSOperation *)getSummonersWithIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion;
-//
-///** Retrive mastery pages of a list of summoners, mapped by their summoner ID.
+- (NSOperation *)getSummonersWithIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
+
+/** Retrive mastery pages of a list of summoners, mapped by their summoner ID.
+ */
+- (NSOperation *)getMasteryPagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
+
+/** Retrive summoner names, mapped by their summoner ID, from a given list of summoner IDs.
+ */
+- (NSOperation *)getSummonerNamesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
+
+/** Retrive rune pages of a list of summoners, mapped by their summoner ID.
+ */
+- (NSOperation *)getRunePagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
+
+///**
 // */
-//- (NSOperation *)getMasteryPagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion;
-//
-///** Retrive summoner names, mapped by their summoner ID, from a given list of summoner IDs.
-// */
-//- (NSOperation *)getSummonerNamesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion;
-//
-///** Retrive rune pages of a list of summoners, mapped by their summoner ID.
-// */
-//- (NSOperation *)getRunePagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion;
+//- (NSOperation *)getTeamsWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
 //
 ///**
 // */
-//- (NSOperation *)getTeamsWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion;
-//
-///**
-// */
-//- (NSOperation *)getTeamsWithTeamIDs:(NSArray *)teamIDs block:(RKDiciontaryResultBlock)completion;
+//- (NSOperation *)getTeamsWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion;
 
 /**
  Builds a URL for API Requests

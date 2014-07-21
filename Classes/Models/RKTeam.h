@@ -6,11 +6,13 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+
+#import "RKObjectMapper.h"
 
 @class RKRoster;
 
-@interface RKTeam : NSObject
+@interface RKTeam : NSObject <RKObjectMapping>
 
 @property (nonatomic, strong) NSString *fullID;
 @property (nonatomic, strong) NSArray *matchHistory;

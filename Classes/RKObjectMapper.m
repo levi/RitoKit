@@ -8,6 +8,11 @@
 
 #import "RKObjectMapper.h"
 
+@interface RKObjectMapper ()
+
+@property (nonatomic, strong) Class<RKObjectMapping> classType;
+
+@end
 
 @implementation RKObjectMapper
 
@@ -57,7 +62,7 @@
 - (id)objectForDictionary:(NSDictionary *)dictionary
 {
     NSDictionary *mapping = [self.classType objectMapping];
-    id object = [self.classType new];
+    id object = [(Class)self.classType new];
 
     for (NSString *key in dictionary) {
         id value = dictionary[key];
@@ -71,18 +76,17 @@
     return object;
 }
 
+#pragma mark - Value transforms
+
 - (BOOL)transformValue:(id *)value forKey:(NSString *)key
 {
     // Find key type
     NSString *typeAttribute = [self typeAttributeWithPropertyName:key];
     
     if (!typeAttribute) return NO;
-    
-    NSString *propertyType = [typeAttribute substringFromIndex:1];
-    const char *rawPropertyType = [propertyType UTF8String];
 
     if ([self isClassTypeAttribute:typeAttribute]) {
-        // T@"NSString" --> NSString
+        // ie. T@"NSString" --> NSString
         NSString *classAttribute = [typeAttribute substringWithRange:NSMakeRange(3, typeAttribute.length - 4)];
 
         NSLog(@"Class attribute: %@", classAttribute);
@@ -94,7 +98,8 @@
         }
     } else {
         if ([*value isKindOfClass:NSNumber.class]) {
-            if (strcmp(rawPropertyType, @encode(BOOL)) == 0) {
+            // Transform integer into boolean
+            if ([self isBOOLPropertyTypeForAttribute:typeAttribute]) {
                 *value = @([*value boolValue]);
                 return *value != nil;
             }
@@ -107,13 +112,34 @@
     return NO;
 }
 
+/** Transform an object value to a given class type.
+ */
 - (BOOL)transformValue:(id *)value withClass:(Class)classType forKey:(NSString *)key
 {
-    if ([*value isKindOfClass:classType]) {
+    // Transform an array of objects into an array of transformed objects
+    if ([*value isKindOfClass:NSArray.class]) {
+        Class objectClassType = [self classTypeForArrayKey:key];
+        
+        // Ignore unidentified arrays
+        if (!objectClassType) return NO;
+        
+        // Transform each object with in the array
+        NSMutableArray *outputArray = [NSMutableArray array];
+        RKObjectMapper *mapper = [[RKObjectMapper alloc] initWithClass:objectClassType];
+        [*value enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            id outputObject = [mapper objectForDictionary:obj];
+            NSLog(@"NSArray transform -- %@: %@", objectClassType, outputObject);
+            [outputArray addObject:outputObject];
+        }];
+        *value = [outputArray copy];
         return YES;
     }
     
+    // Don't transform objects that don't need to be transformed
+    if ([*value isKindOfClass:classType]) return YES;
+    
     if ([*value isKindOfClass:NSNumber.class]) {
+        // Transform millisecond double into NSDate
         if ([classType isSubclassOfClass:NSDate.class]) {
             NSTimeInterval interval = [*value doubleValue] / 1000.0;
             *value = [NSDate dateWithTimeIntervalSince1970:interval];
@@ -124,6 +150,10 @@
     return NO;
 }
 
+/** Fetch type attribute string of a given property on the scoped class type.
+    
+    Attribute is equivalent to @encode() result from Objective-C runtime.
+ */
 - (NSString *)typeAttributeWithPropertyName:(NSString *)key
 {
     objc_property_t property = class_getProperty(self.classType, [key cStringUsingEncoding:NSASCIIStringEncoding]);
@@ -136,9 +166,27 @@
     return attributes[0];
 }
 
+/** Test if type attribute string is indeed a class type
+ */
 - (BOOL)isClassTypeAttribute:(NSString *)typeAttribute
 {
     return [typeAttribute hasPrefix:@"T@"];
+}
+
+/** Look up class type to transform array elements into
+ */
+- (Class)classTypeForArrayKey:(NSString *)key
+{
+    return [self.classType arrayKeyMapping][key];
+}
+
+#pragma mark - Property type manipulation
+
+- (BOOL)isBOOLPropertyTypeForAttribute:(NSString *)typeAttribute
+{
+    NSString *propertyType = [typeAttribute substringFromIndex:1];
+    const char *rawPropertyType = [propertyType UTF8String];
+    return strcmp(rawPropertyType, @encode(BOOL)) == 0;
 }
 
 @end

@@ -7,7 +7,25 @@
 //
 
 #import "RKMasteryPage.h"
+#import "RKMastery.h"
 
 @implementation RKMasteryPage
+
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"id": RKMappingKey(ID),
+        @"name": RKMappingKey(name),
+        @"current": RKMappingKey(isCurrent),
+        @"masteries": RKMappingKey(masteries),
+    };
+}
+
++ (NSDictionary *)arrayKeyMapping
+{
+    return @{
+        @"masteries": RKMastery.class
+    };
+}
 
 @end

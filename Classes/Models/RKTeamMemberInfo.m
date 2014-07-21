@@ -10,4 +10,14 @@
 
 @implementation RKTeamMemberInfo
 
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"inviteDate": RKMappingKey(inviteDate),
+        @"joinDate": RKMappingKey(joinDate),
+        @"playerId": RKMappingKey(playerID),
+        @"status": RKMappingKey(status),
+    };
+}
+
 @end

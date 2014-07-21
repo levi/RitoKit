@@ -10,4 +10,14 @@
 
 @implementation RKTeamStatDetail
 
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"averageGamesPlayed": RKMappingKey(averageGamesPlayed),
+        @"losses": RKMappingKey(losses),
+        @"teamStatType": RKMappingKey(teamStatType),
+        @"wins": RKMappingKey(wins),
+    };
+}
+
 @end

@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface RKMastery : NSObject
+#import "RKObjectMapper.h"
+
+@interface RKMastery : NSObject <RKObjectMapping>
 
 @property (nonatomic, assign) NSInteger ID;
 @property (nonatomic, assign) NSInteger rank;

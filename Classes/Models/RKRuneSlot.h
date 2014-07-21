@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface RKRuneSlot : NSObject
+#import "RKObjectMapper.h"
+
+@interface RKRuneSlot : NSObject <RKObjectMapping>
 
 @property (nonatomic, assign) NSInteger runeID;
 @property (nonatomic, assign) NSInteger runeSlotID;

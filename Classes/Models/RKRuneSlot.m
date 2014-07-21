@@ -10,4 +10,12 @@
 
 @implementation RKRuneSlot
 
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"runeId": RKMappingKey(runeID),
+        @"runeSlotId": RKMappingKey(runeSlotID),
+    };
+}
+
 @end

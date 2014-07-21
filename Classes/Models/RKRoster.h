@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface RKRoster : NSObject
+#import "RKObjectMapper.h"
+
+@interface RKRoster : NSObject <RKObjectMapping>
 
 @property (nonatomic, strong) NSArray *members;
 @property (nonatomic, assign) NSInteger ownerID;

@@ -7,7 +7,23 @@
 //
 
 #import "RKRunePage.h"
+#import "RKRuneSlot.h"
 
 @implementation RKRunePage
+
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"id": RKMappingKey(ID),
+        @"current": RKMappingKey(isCurrent),
+        @"name": RKMappingKey(name),
+        @"slots": RKMappingKey(slots),
+    };
+}
+
++ (NSDictionary *)arrayKeyMapping
+{
+    return @{ @"slots": RKRuneSlot.class };
+}
 
 @end

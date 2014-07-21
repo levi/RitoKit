@@ -277,11 +277,11 @@
 				9BD8B2CE19736CEA00C7F22E /* README.md */,
 				9BB2C020196B6ECA00D9FEAA /* Models */,
 				9BB2C04C196C7FA400D9FEAA /* RiotKit.h */,
+				9BB2C04D196C7FA400D9FEAA /* RiotKit.m */,
 				9B19A021196E1122009AA715 /* RKObjectMapper.h */,
 				9B19A022196E1122009AA715 /* RKObjectMapper.m */,
 				9BB2C050196CA53800D9FEAA /* RKOperation.h */,
 				9BB2C051196CA53800D9FEAA /* RKOperation.m */,
-				9BB2C04D196C7FA400D9FEAA /* RiotKit.m */,
 			);
 			path = RiotKit;
 			sourceTree = "<group>";

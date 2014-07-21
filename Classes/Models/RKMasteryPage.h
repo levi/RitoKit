@@ -6,13 +6,15 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface RKMasteryPage : NSObject
+#import "RKObjectMapper.h"
 
-@property (nonatomic, assign) BOOL isCurrent;
+@interface RKMasteryPage : NSObject <RKObjectMapping>
+
 @property (nonatomic, assign) NSInteger ID;
-@property (nonatomic, strong) NSArray *masteries;
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) BOOL isCurrent;
+@property (nonatomic, strong) NSArray *masteries;
 
 @end

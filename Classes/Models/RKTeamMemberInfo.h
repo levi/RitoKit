@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface RKTeamMemberInfo : NSObject
+#import "RKObjectMapper.h"
+
+@interface RKTeamMemberInfo : NSObject <RKObjectMapping>
 
 @property (nonatomic, strong) NSDate *inviteDate;
 @property (nonatomic, strong) NSDate *joinDate;

@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface RKTeamStatDetail : NSObject
+#import "RKObjectMapper.h"
+
+@interface RKTeamStatDetail : NSObject <RKObjectMapping>
 
 @property (nonatomic, assign) NSInteger averageGamesPlayed;
 @property (nonatomic, assign) NSInteger losses;

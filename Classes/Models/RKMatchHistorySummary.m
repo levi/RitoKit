@@ -10,4 +10,21 @@
 
 @implementation RKMatchHistorySummary
 
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"assists": RKMappingKey(assists),
+        @"date": RKMappingKey(date),
+        @"deaths": RKMappingKey(deaths),
+        @"gameId": RKMappingKey(gameID),
+        @"gameMode": RKMappingKey(gameMode),
+        @"invalid": RKMappingKey(isInvalid),
+        @"kills": RKMappingKey(kills),
+        @"mapId": RKMappingKey(mapID),
+        @"opposingTeamKills": RKMappingKey(opposingTeamKills),
+        @"opposingTeamName": RKMappingKey(opposingTeamName),
+        @"win": RKMappingKey(didWin),
+    };
+}
+
 @end

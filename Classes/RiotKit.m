@@ -106,19 +106,19 @@ static NSString * const RKChampionEndpoint = @"/champion";
 
 #pragma mark - Leagues
 
-//- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion
+//- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
 //{
 //}
 
-//- (NSOperation *)getLeagueEntriesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion
+//- (NSOperation *)getLeagueEntriesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
 //{
 //}
 
-//- (NSOperation *)getLeaguesWithTeamIDs:(NSArray *)teamIDs block:(RKDiciontaryResultBlock)completion
+//- (NSOperation *)getLeaguesWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion
 //{
 //}
 
-//- (NSOperation *)getLeagueEntriesWithTeamIDs:(NSArray *)teamIDs block:(RKDiciontaryResultBlock)completion
+//- (NSOperation *)getLeagueEntriesWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion
 //{
 //}
 
@@ -138,7 +138,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 
 #pragma mark - Summoners
 
-- (NSOperation *)getSummonersWithNames:(NSArray *)summonerNames block:(RKDiciontaryResultBlock)completion
+- (NSOperation *)getSummonersWithNames:(NSArray *)summonerNames block:(RKDictionaryResultBlock)completion
 {
     NSString *summoners = [summonerNames componentsJoinedByString:@","];
     NSString *part = [NSString stringWithFormat:@"/summoner/by-name/%@", summoners];
@@ -152,7 +152,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
     }];
 }
 
-- (NSOperation *)getSummonersWithIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion
+- (NSOperation *)getSummonersWithIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
 {
     NSString *summoners = [summonerIDs componentsJoinedByString:@","];
     NSString *part = [NSString stringWithFormat:@"/summoner/%@", summoners];
@@ -166,25 +166,60 @@ static NSString * const RKChampionEndpoint = @"/champion";
     }];
 }
 
-//- (NSOperation *)getMasteryPagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion
-//{
-//}
+- (NSOperation *)getMasteryPagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
+{
+    NSString *summoners = [summonerIDs componentsJoinedByString:@","];
+    NSString *part = [NSString stringWithFormat:@"/summoner/%@/masteries", summoners];
+    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+        if (error) {
+            completion(nil, error);
+        } else {
+            NSMutableDictionary *pages = [NSMutableDictionary dictionary];
+            [result enumerateKeysAndObjectsUsingBlock:^(id key, NSDictionary *obj, BOOL *stop) {
+                pages[key] = [RKObjectMapper arrayFromResponse:obj[@"pages"] class:RKMasteryPage.class];
+            }];
+            completion(pages, nil);
+        }
+    }];
+}
 
-//- (NSOperation *)getSummonerNamesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion
-//{
-//}
+- (NSOperation *)getSummonerNamesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
+{
+    NSString *summoners = [summonerIDs componentsJoinedByString:@","];
+    NSString *part = [NSString stringWithFormat:@"/summoner/%@/name", summoners];
+    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+        if (error) {
+            completion(nil, error);
+        } else {
+            completion(result, nil);
+        }
+    }];
+}
 
-//- (NSOperation *)getRunePagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion
-//{
-//}
+- (NSOperation *)getRunePagesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
+{
+    NSString *summoners = [summonerIDs componentsJoinedByString:@","];
+    NSString *part = [NSString stringWithFormat:@"/summoner/%@/runes", summoners];
+    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+        if (error) {
+            completion(nil, error);
+        } else {
+            NSMutableDictionary *pages = [NSMutableDictionary dictionary];
+            [result enumerateKeysAndObjectsUsingBlock:^(id ID, NSDictionary *obj, BOOL *stop) {
+                pages[ID] = [RKObjectMapper arrayFromResponse:obj[@"pages"] class:RKRunePage.class];
+            }];
+            completion(pages, nil);
+        }
+    }];
+}
 
 #pragma mark - Teams
 
-//- (NSOperation *)getTeamsWithSummonerIDs:(NSArray *)summonerIDs block:(RKDiciontaryResultBlock)completion
+//- (NSOperation *)getTeamsWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
 //{
 //}
 
-//- (NSOperation *)getTeamsWithTeamIDs:(NSArray *)teamIDs block:(RKDiciontaryResultBlock)completion
+//- (NSOperation *)getTeamsWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion
 //{
 //}
 

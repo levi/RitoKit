@@ -6,12 +6,14 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import <objc/runtime.h>
 
 #define RKMappingKey(sel) (NSStringFromSelector(@selector(sel)))
 
 @protocol RKObjectMapping <NSObject>
+
+@required
 
 + (NSDictionary *)objectMapping;
 
@@ -22,8 +24,6 @@
 @end
 
 @interface RKObjectMapper : NSObject
-
-@property (nonatomic, strong) Class classType;
 
 /** Transform an object into a mapped object of a given class type.
  */
