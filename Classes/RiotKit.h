@@ -7,41 +7,16 @@
 //
 
 @import Foundation;
+
+#import "RKConstants.h"
 #import "RKModels.h"
 
-extern NSString * const RKRegionBrazil;
-extern NSString * const RKRegionEUNorticAndEast;
-extern NSString * const RKRegionEUWest;
-extern NSString * const RKRegionKorea;
-extern NSString * const RKRegionLatinAmericaNorth;
-extern NSString * const RKRegionLatinAmericaSouth;
-extern NSString * const RKRegionNorthAmerica;
-extern NSString * const RKRegionOceania;
-extern NSString * const RKRegionRussia;
-extern NSString * const RKRegionTurkey;
-
-extern NSString * const RKChampionVersion;
-extern NSString * const RKGameVersion;
-extern NSString * const RKLeagueVersion;
-extern NSString * const RKStaticDataVersion;
-extern NSString * const RKStatsVersion;
-extern NSString * const RKSummonerVersion;
-extern NSString * const RKTeamVersion;
-
-extern NSString * const RiotKitErrorDomain;
-
-typedef NS_ENUM(NSInteger, RKErrorCode) {
-    RKErrorCodeBadRequest = 400,
-    RKErrorCodeUnauthorized = 401,
-    RKErrorCodeRateLimitExceeded = 429,
-    RKErrorCodeServerError = 500,
-    RKErrorCodeServiceUnavaiable = 503,
-};
+@class RKRequest;
 
 typedef void (^RKChampionsResultBlock)(NSArray *champions, NSError *error);
 typedef void (^RKDictionaryResultBlock)(NSDictionary *objects, NSError *error);
-typedef void (^RKRecentGamesResultBlock)(NSInteger, NSArray *, NSError *error);
 typedef void (^RKChampionResultBlock)(RKChampion *champion, NSError *error);
+typedef void (^RKGamesResultBlock)(NSArray *games, NSError *error);
 typedef void (^RKRankedStatsResultBlock)(RKRankedStats *rankedStats, NSError *error);
 typedef void (^RKPlayerStatsSummaryResultBlock)(RKPlayerStatsSummary *playerStatsSummary, NSError *error);
 typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
@@ -55,6 +30,8 @@ typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
  */
 - (instancetype)initWithAPIKey:(NSString *)apiKey region:(NSString *)region;
 
+- (instancetype)initWithAPIKey:(NSString *)apiKey region:(NSString *)region requestManager:(RKRequest *)requestManager;
+
 /** Retrive game availability status for all champions.
  */
 - (NSOperation *)getChampionsWithBlock:(RKChampionsResultBlock)completion;
@@ -67,11 +44,10 @@ typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
  */
 - (NSOperation *)getChampionWithID:(NSInteger)championID block:(RKChampionResultBlock)completion;
 
-///** Retrive a summoner's recent games with granular stats.
-// */
-//- (NSOperation *)getRecentGamesWithSummonerID:(NSInteger)summonerID block:(RKRecentGamesResultBlock)completion;
-//
-//
+/** Retrive a summoner's recent games with granular stats.
+ */
+- (NSOperation *)getRecentGamesWithSummonerID:(NSInteger)summonerID block:(RKGamesResultBlock)completion;
+
 ///** Retrive leagues summoners belong to, mapped by summoner ID.
 // */
 //- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
@@ -123,14 +99,9 @@ typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
 ///**
 // */
 //- (NSOperation *)getTeamsWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
-//
+
 ///**
 // */
 //- (NSOperation *)getTeamsWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion;
-
-/**
- Builds a URL for API Requests
- */
-- (NSURL *)_requestURLWithURLPart:(NSString *)part version:(NSString *)version parameters:(NSDictionary *)parameters;
 
 @end

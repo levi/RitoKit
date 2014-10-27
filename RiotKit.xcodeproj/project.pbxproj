@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9B19A020196DD513009AA715 /* RiotKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C04D196C7FA400D9FEAA /* RiotKit.m */; };
 		9B19A023196E1122009AA715 /* RKObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19A022196E1122009AA715 /* RKObjectMapper.m */; };
+		9B31D3C719F5414B005E0442 /* v1.2_champions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B31D3C519F5414B005E0442 /* v1.2_champions.json */; };
+		9B31D3C819F5414B005E0442 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B31D3C619F5414B005E0442 /* TemplateIcon2x.png */; };
 		9BB2BFEB196B651000D9FEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFEA196B651000D9FEAA /* main.m */; };
 		9BB2BFEE196B651000D9FEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFED196B651000D9FEAA /* AppDelegate.m */; };
 		9BB2BFF1196B651000D9FEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFF0196B651000D9FEAA /* ViewController.m */; };
@@ -36,10 +38,24 @@
 		9BB2C04E196C7FA400D9FEAA /* RiotKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C04D196C7FA400D9FEAA /* RiotKit.m */; };
 		9BB2C052196CA53800D9FEAA /* RKOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C051196CA53800D9FEAA /* RKOperation.m */; };
 		9BB2C059196DCB8400D9FEAA /* RiotKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C001196B651000D9FEAA /* RiotKitTests.m */; };
+		9BB6C2A019F863E300971766 /* RKFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6C29F19F863E300971766 /* RKFixture.m */; };
+		9BBFAD2B19F9F21F00EEC8C0 /* RKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD2A19F9F21F00EEC8C0 /* RKRequest.m */; };
+		9BBFAD2E19F9F2B000EEC8C0 /* RKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */; };
+		9BBFAD3219FBD0DE00EEC8C0 /* RKTestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3119FBD0DE00EEC8C0 /* RKTestRequest.m */; };
+		9BBFAD3319FCE75C00EEC8C0 /* RKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */; };
+		9BBFAD3619FCEA4C00EEC8C0 /* v1.2_champions_free.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3419FCE92100EEC8C0 /* v1.2_champions_free.json */; };
+		9BBFAD3819FE0BC500EEC8C0 /* v1.2_champion_single.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3719FE0BC500EEC8C0 /* v1.2_champion_single.json */; };
+		9BBFAD3A19FE0E3400EEC8C0 /* v1.3_game_recent.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3919FE0E3400EEC8C0 /* v1.3_game_recent.json */; };
+		9BBFAD3C19FE168700EEC8C0 /* v1.4_summoner_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3B19FE168700EEC8C0 /* v1.4_summoner_name.json */; };
+		9BBFAD3E19FE16D800EEC8C0 /* v1.4_summoner_id.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3D19FE16D800EEC8C0 /* v1.4_summoner_id.json */; };
+		9BBFAD4019FE180200EEC8C0 /* v1.4_summoner_id_masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3F19FE180100EEC8C0 /* v1.4_summoner_id_masteries.json */; };
+		9BBFAD4219FE187500EEC8C0 /* v1.4_summoner_ids_masteries.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4119FE187500EEC8C0 /* v1.4_summoner_ids_masteries.json */; };
+		9BBFAD4419FE197200EEC8C0 /* v1.4_summoner_id_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4319FE197200EEC8C0 /* v1.4_summoner_id_name.json */; };
+		9BBFAD4619FE19B900EEC8C0 /* v1.4_summoner_ids_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4519FE19B900EEC8C0 /* v1.4_summoner_ids_name.json */; };
+		9BBFAD4819FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4719FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json */; };
+		9BBFAD4A19FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4919FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json */; };
 		9BD8B2CF19736CEA00C7F22E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BD8B2CE19736CEA00C7F22E /* README.md */; };
 		9BD8B2D1197371D400C7F22E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD8B2D0197371D400C7F22E /* Main.storyboard */; };
-		E937F239D650422F983044DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3C486FF5594279BB6C5E9A /* libPods.a */; };
-		EA37B31048724B72A9F28D3A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3C486FF5594279BB6C5E9A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +90,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43F53129214E4A779E3317EE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		9B19A021196E1122009AA715 /* RKObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMapper.h; path = Classes/RKObjectMapper.h; sourceTree = SOURCE_ROOT; };
 		9B19A022196E1122009AA715 /* RKObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKObjectMapper.m; path = Classes/RKObjectMapper.m; sourceTree = SOURCE_ROOT; };
+		9B31D3C519F5414B005E0442 /* v1.2_champions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.2_champions.json; sourceTree = "<group>"; };
+		9B31D3C619F5414B005E0442 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 		9BB2BFE5196B651000D9FEAA /* RiotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB2BFEA196B651000D9FEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RiotKitDemo/main.m; sourceTree = SOURCE_ROOT; };
 		9BB2BFEC196B651000D9FEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RiotKitDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -133,10 +150,28 @@
 		9BB2C04F196C816300D9FEAA /* RKModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKModels.h; path = Classes/Models/RKModels.h; sourceTree = SOURCE_ROOT; };
 		9BB2C050196CA53800D9FEAA /* RKOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKOperation.h; path = Classes/RKOperation.h; sourceTree = SOURCE_ROOT; };
 		9BB2C051196CA53800D9FEAA /* RKOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKOperation.m; path = Classes/RKOperation.m; sourceTree = SOURCE_ROOT; };
+		9BB6C29E19F863E300971766 /* RKFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFixture.h; sourceTree = "<group>"; };
+		9BB6C29F19F863E300971766 /* RKFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFixture.m; sourceTree = "<group>"; };
+		9BBFAD2919F9F21F00EEC8C0 /* RKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRequest.h; path = Classes/RKRequest.h; sourceTree = SOURCE_ROOT; };
+		9BBFAD2A19F9F21F00EEC8C0 /* RKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRequest.m; path = Classes/RKRequest.m; sourceTree = SOURCE_ROOT; };
+		9BBFAD2C19F9F2B000EEC8C0 /* RKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKConstants.h; path = Classes/RKConstants.h; sourceTree = SOURCE_ROOT; };
+		9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKConstants.m; path = Classes/RKConstants.m; sourceTree = SOURCE_ROOT; };
+		9BBFAD3019FBD0DE00EEC8C0 /* RKTestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTestRequest.h; sourceTree = "<group>"; };
+		9BBFAD3119FBD0DE00EEC8C0 /* RKTestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTestRequest.m; sourceTree = "<group>"; };
+		9BBFAD3419FCE92100EEC8C0 /* v1.2_champions_free.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = v1.2_champions_free.json; path = ../v1.2_champions_free.json; sourceTree = "<group>"; };
+		9BBFAD3719FE0BC500EEC8C0 /* v1.2_champion_single.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.2_champion_single.json; sourceTree = "<group>"; };
+		9BBFAD3919FE0E3400EEC8C0 /* v1.3_game_recent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.3_game_recent.json; sourceTree = "<group>"; };
+		9BBFAD3B19FE168700EEC8C0 /* v1.4_summoner_name.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_name.json; sourceTree = "<group>"; };
+		9BBFAD3D19FE16D800EEC8C0 /* v1.4_summoner_id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_id.json; sourceTree = "<group>"; };
+		9BBFAD3F19FE180100EEC8C0 /* v1.4_summoner_id_masteries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_id_masteries.json; sourceTree = "<group>"; };
+		9BBFAD4119FE187500EEC8C0 /* v1.4_summoner_ids_masteries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_ids_masteries.json; sourceTree = "<group>"; };
+		9BBFAD4319FE197200EEC8C0 /* v1.4_summoner_id_name.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_id_name.json; sourceTree = "<group>"; };
+		9BBFAD4519FE19B900EEC8C0 /* v1.4_summoner_ids_name.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_ids_name.json; sourceTree = "<group>"; };
+		9BBFAD4719FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_id_runes.json; sourceTree = "<group>"; };
+		9BBFAD4919FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_ids_runes.json; sourceTree = "<group>"; };
 		9BD8B2CE19736CEA00C7F22E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		9BD8B2D0197371D400C7F22E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = RiotKitDemo/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		9BD8B2D21973722400C7F22E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiotKitDemo/Info.plist; sourceTree = SOURCE_ROOT; };
-		CF3C486FF5594279BB6C5E9A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +179,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA37B31048724B72A9F28D3A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +186,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E937F239D650422F983044DA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +199,6 @@
 				9BB2BFFE196B651000D9FEAA /* RiotKitTests */,
 				9BB2BFE7196B651000D9FEAA /* Demo App */,
 				9BB2BFE6196B651000D9FEAA /* Products */,
-				43F53129214E4A779E3317EE /* Pods.xcconfig */,
 				DF9990CD1FB74477B9DDF25E /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -207,7 +239,13 @@
 			isa = PBXGroup;
 			children = (
 				9BB2C001196B651000D9FEAA /* RiotKitTests.m */,
+				9BBFAD2F19F9FE4600EEC8C0 /* Fixtures */,
+				9BB6C29E19F863E300971766 /* RKFixture.h */,
+				9BB6C29F19F863E300971766 /* RKFixture.m */,
+				9B31D3C619F5414B005E0442 /* TemplateIcon2x.png */,
 				9BB2BFFF196B651000D9FEAA /* Supporting Files */,
+				9BBFAD3019FBD0DE00EEC8C0 /* RKTestRequest.h */,
+				9BBFAD3119FBD0DE00EEC8C0 /* RKTestRequest.m */,
 			);
 			path = RiotKitTests;
 			sourceTree = "<group>";
@@ -274,10 +312,14 @@
 		9BB2C04B196C7D7E00D9FEAA /* RiotKit */ = {
 			isa = PBXGroup;
 			children = (
+				9BBFAD2919F9F21F00EEC8C0 /* RKRequest.h */,
+				9BBFAD2A19F9F21F00EEC8C0 /* RKRequest.m */,
 				9BD8B2CE19736CEA00C7F22E /* README.md */,
 				9BB2C020196B6ECA00D9FEAA /* Models */,
 				9BB2C04C196C7FA400D9FEAA /* RiotKit.h */,
 				9BB2C04D196C7FA400D9FEAA /* RiotKit.m */,
+				9BBFAD2C19F9F2B000EEC8C0 /* RKConstants.h */,
+				9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */,
 				9B19A021196E1122009AA715 /* RKObjectMapper.h */,
 				9B19A022196E1122009AA715 /* RKObjectMapper.m */,
 				9BB2C050196CA53800D9FEAA /* RKOperation.h */,
@@ -286,10 +328,28 @@
 			path = RiotKit;
 			sourceTree = "<group>";
 		};
+		9BBFAD2F19F9FE4600EEC8C0 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				9BBFAD3B19FE168700EEC8C0 /* v1.4_summoner_name.json */,
+				9BBFAD3D19FE16D800EEC8C0 /* v1.4_summoner_id.json */,
+				9BBFAD3F19FE180100EEC8C0 /* v1.4_summoner_id_masteries.json */,
+				9BBFAD4119FE187500EEC8C0 /* v1.4_summoner_ids_masteries.json */,
+				9BBFAD4319FE197200EEC8C0 /* v1.4_summoner_id_name.json */,
+				9BBFAD4519FE19B900EEC8C0 /* v1.4_summoner_ids_name.json */,
+				9BBFAD4719FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json */,
+				9BBFAD4919FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json */,
+				9BBFAD3419FCE92100EEC8C0 /* v1.2_champions_free.json */,
+				9BBFAD3919FE0E3400EEC8C0 /* v1.3_game_recent.json */,
+				9B31D3C519F5414B005E0442 /* v1.2_champions.json */,
+				9BBFAD3719FE0BC500EEC8C0 /* v1.2_champion_single.json */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
 		DF9990CD1FB74477B9DDF25E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF3C486FF5594279BB6C5E9A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,11 +361,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BB2C005196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RiotKit" */;
 			buildPhases = (
-				EDFA3F4FF3DC41F8AC950F27 /* Check Pods Manifest.lock */,
 				9BB2BFE1196B651000D9FEAA /* Sources */,
 				9BB2BFE2196B651000D9FEAA /* Frameworks */,
 				9BB2BFE3196B651000D9FEAA /* Resources */,
-				87098E4CCB8D41449404DE1B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,11 +378,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BB2C008196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RiotKitTests" */;
 			buildPhases = (
-				26EDEDFD9FF7447FB01580E4 /* Check Pods Manifest.lock */,
 				9BB2BFF7196B651000D9FEAA /* Sources */,
 				9BB2BFF8196B651000D9FEAA /* Frameworks */,
 				9BB2BFF9196B651000D9FEAA /* Resources */,
-				CCD01559533C4F77AD688B89 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,73 +446,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B31D3C819F5414B005E0442 /* TemplateIcon2x.png in Resources */,
+				9BBFAD4819FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json in Resources */,
+				9B31D3C719F5414B005E0442 /* v1.2_champions.json in Resources */,
+				9BBFAD3A19FE0E3400EEC8C0 /* v1.3_game_recent.json in Resources */,
+				9BBFAD4219FE187500EEC8C0 /* v1.4_summoner_ids_masteries.json in Resources */,
+				9BBFAD4619FE19B900EEC8C0 /* v1.4_summoner_ids_name.json in Resources */,
+				9BBFAD3619FCEA4C00EEC8C0 /* v1.2_champions_free.json in Resources */,
+				9BBFAD3E19FE16D800EEC8C0 /* v1.4_summoner_id.json in Resources */,
+				9BBFAD4A19FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json in Resources */,
+				9BBFAD4019FE180200EEC8C0 /* v1.4_summoner_id_masteries.json in Resources */,
+				9BBFAD3819FE0BC500EEC8C0 /* v1.2_champion_single.json in Resources */,
+				9BBFAD4419FE197200EEC8C0 /* v1.4_summoner_id_name.json in Resources */,
+				9BBFAD3C19FE168700EEC8C0 /* v1.4_summoner_name.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		26EDEDFD9FF7447FB01580E4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		87098E4CCB8D41449404DE1B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCD01559533C4F77AD688B89 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDFA3F4FF3DC41F8AC950F27 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BB2BFE1196B651000D9FEAA /* Sources */ = {
@@ -478,7 +484,9 @@
 				9BB2C044196C77B900D9FEAA /* RKAggregatedStats.m in Sources */,
 				9BB2C04E196C7FA400D9FEAA /* RiotKit.m in Sources */,
 				9BB2C010196B680C00D9FEAA /* RKGame.m in Sources */,
+				9BBFAD2E19F9F2B000EEC8C0 /* RKConstants.m in Sources */,
 				9BB2C038196C759400D9FEAA /* RKMasteryPage.m in Sources */,
+				9BBFAD2B19F9F21F00EEC8C0 /* RKRequest.m in Sources */,
 				9BB2C01C196B6D9500D9FEAA /* RKLeagueEntry.m in Sources */,
 				9BB2C03E196C760100D9FEAA /* RKSummoner.m in Sources */,
 				9BB2C032196C751600D9FEAA /* RKRunePage.m in Sources */,
@@ -497,6 +505,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBFAD3219FBD0DE00EEC8C0 /* RKTestRequest.m in Sources */,
+				9BB6C2A019F863E300971766 /* RKFixture.m in Sources */,
+				9BBFAD3319FCE75C00EEC8C0 /* RKConstants.m in Sources */,
 				9B19A020196DD513009AA715 /* RiotKit.m in Sources */,
 				9BB2C059196DCB8400D9FEAA /* RiotKitTests.m in Sources */,
 			);
@@ -606,12 +617,11 @@
 		};
 		9BB2C006196B651000D9FEAA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43F53129214E4A779E3317EE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RiotKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -619,12 +629,11 @@
 		};
 		9BB2C007196B651000D9FEAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43F53129214E4A779E3317EE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RiotKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -632,7 +641,6 @@
 		};
 		9BB2C009196B651000D9FEAA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43F53129214E4A779E3317EE /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RiotKit.app/RiotKit";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -652,7 +660,6 @@
 		};
 		9BB2C00A196B651000D9FEAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43F53129214E4A779E3317EE /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RiotKit.app/RiotKit";
 				FRAMEWORK_SEARCH_PATHS = (

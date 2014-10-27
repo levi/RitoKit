@@ -1,0 +1,82 @@
+{"champions": [
+               {
+               "botMmEnabled": false,
+               "id": 119,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 43,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 64,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": true,
+               "id": 25,
+               "rankedPlayEnabled": true,
+               "botEnabled": true,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 68,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 27,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 134,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 110,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 254,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": true,
+               "freeToPlay": true
+               },
+               {
+               "botMmEnabled": false,
+               "id": 101,
+               "rankedPlayEnabled": true,
+               "botEnabled": false,
+               "active": false,
+               "freeToPlay": true
+               }
+               ]}

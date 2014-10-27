@@ -1,0 +1,970 @@
+{"champions": [
+{
+"botMmEnabled": false,
+"id": 266,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 103,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 84,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 12,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 32,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 34,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 1,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 22,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 268,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 53,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 63,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 201,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 51,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 69,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 31,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 42,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 122,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 131,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 119,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": true,
+"id": 36,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 60,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 28,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 81,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 9,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 114,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 105,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 3,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 41,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 86,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 150,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 79,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 104,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 120,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 74,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 39,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 40,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 59,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 24,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 126,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 222,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 43,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": true,
+"id": 30,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 38,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": false,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 55,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 10,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 85,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 121,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 96,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 7,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 64,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": true,
+"id": 89,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 127,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 236,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 117,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 99,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 54,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 90,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 57,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 11,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 21,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 62,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 82,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 25,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": false,
+"id": 267,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 75,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 111,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 76,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": false,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 56,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 20,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 2,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 61,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 80,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 78,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 133,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 33,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 58,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 107,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 92,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 68,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": true,
+"id": 13,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 113,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 35,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 98,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 102,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 27,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": false,
+"id": 14,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 15,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 72,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 37,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 16,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 50,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 134,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": false,
+"id": 91,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 44,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 17,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 412,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 18,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 48,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 23,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 4,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 29,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 77,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 6,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 110,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": false,
+"id": 67,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 45,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 161,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 254,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": true
+},
+{
+"botMmEnabled": false,
+"id": 112,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 8,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 106,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 19,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 101,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": false,
+"freeToPlay": true
+},
+{
+"botMmEnabled": true,
+"id": 5,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 157,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 83,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 154,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": false,
+"id": 238,
+"rankedPlayEnabled": true,
+"botEnabled": false,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 115,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 26,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+},
+{
+"botMmEnabled": true,
+"id": 143,
+"rankedPlayEnabled": true,
+"botEnabled": true,
+"active": true,
+"freeToPlay": false
+}
+]}

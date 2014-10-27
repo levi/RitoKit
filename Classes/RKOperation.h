@@ -7,8 +7,7 @@
 //
 
 @import Foundation;
-
-typedef void (^RKOperationCompletionBlock)(NSDictionary *result, NSError *error);
+#import "RKConstants.h"
 
 @interface RKOperation : NSOperation
 

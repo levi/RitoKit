@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
+#import "RKConstants.h"
 #import "RKOperation.h"
+
 #import "RiotKit.h"
 
 @interface RKOperation ()

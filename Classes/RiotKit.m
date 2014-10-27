@@ -6,38 +6,17 @@
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
 //
 
+#import "RKConstants.h"
+#import "RKRequest.h"
 #import "RKOperation.h"
+
 #import "RiotKit.h"
-
-NSString * const RKRegionBrazil = @"br";
-NSString * const RKRegionEUNorticAndEast = @"eune";
-NSString * const RKRegionEUWest = @"euw";
-NSString * const RKRegionKorea = @"kr";
-NSString * const RKRegionLatinAmericaNorth = @"lan";
-NSString * const RKRegionLatinAmericaSouth = @"las";
-NSString * const RKRegionNorthAmerica = @"na";
-NSString * const RKRegionOceania = @"oce";
-NSString * const RKRegionRussia = @"ru";
-NSString * const RKRegionTurkey = @"tr";
-
-NSString * const RKChampionVersion = @"1.2";
-NSString * const RKGameVersion = @"1.3";
-NSString * const RKLeagueVersion = @"2.4";
-NSString * const RKStaticDataVersion = @"1.2";
-NSString * const RKStatsVersion = @"1.3";
-NSString * const RKSummonerVersion = @"1.4";
-NSString * const RKTeamVersion = @"2.3";
-
-NSString * const RiotKitErrorDomain = @"RiotKitErrorDomain";
-
-static NSString * const RKAPIHost = @"api.pvp.net";
-static NSString * const RKAPIEndpoint = @"/api/lol";
 
 static NSString * const RKChampionEndpoint = @"/champion";
 
 @interface RiotKit ()
 
-@property (nonatomic, strong) NSOperationQueue *operationQueue;
+@property (nonatomic, strong) RKRequest *request;
 
 @end
 
@@ -49,8 +28,16 @@ static NSString * const RKChampionEndpoint = @"/champion";
     if (self) {
         _APIKey = apiKey;
         _region = region;
-        _operationQueue = [[NSOperationQueue alloc] init];
-        self.operationQueue.maxConcurrentOperationCount = 10;
+        self.request = [[RKRequest alloc] initWithAPIKey:apiKey region:region];
+    }
+    return self;
+}
+
+- (instancetype)initWithAPIKey:(NSString *)apiKey region:(NSString *)region requestManager:(RKRequest *)requestManager
+{
+    self = [self initWithAPIKey:apiKey region:region];
+    if (self) {
+        self.request = requestManager;
     }
     return self;
 }
@@ -64,18 +51,18 @@ static NSString * const RKChampionEndpoint = @"/champion";
 
 - (NSOperation *)getChampionsWithBlock:(RKChampionsResultBlock)completion
 {
-    return [self sendGetRequestWithURLPart:RKChampionEndpoint version:RKChampionVersion block:[self _championResponseWithCompletion:completion]];
+    return [self.request sendGetRequestWithURLPart:RKChampionEndpoint version:RKChampionVersion block:[self _championResponseWithCompletion:completion]];
 }
 
 - (NSOperation *)getFreeToPlayChampionsWithBlock:(RKChampionsResultBlock)completion
 {
-    return [self sendGetRequestWithURLPart:RKChampionEndpoint version:RKChampionVersion parameters:@{@"freeToPlay": @YES} block:[self _championResponseWithCompletion:completion]];
+    return [self.request sendGetRequestWithURLPart:RKChampionEndpoint version:RKChampionVersion parameters:@{@"freeToPlay": @YES} block:[self _championResponseWithCompletion:completion]];
 }
 
 - (NSOperation *)getChampionWithID:(NSInteger)championID block:(RKChampionResultBlock)completion
 {
     NSString *part = [NSString stringWithFormat:@"%@/%ld", RKChampionEndpoint, (long)championID];
-    return [self sendGetRequestWithURLPart:part version:RKChampionVersion parameters:nil block:^(NSDictionary *result, NSError *error) {
+    return [self.request sendGetRequestWithURLPart:part version:RKChampionVersion parameters:nil block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);
         } else {
@@ -100,9 +87,18 @@ static NSString * const RKChampionEndpoint = @"/champion";
 
 #pragma mark - Games
 
-//- (NSOperation *)getRecentGamesWithSummonerID:(NSInteger)summonerID block:(RKRecentGamesResultBlock)completion
-//{
-//}
+- (NSOperation *)getRecentGamesWithSummonerID:(NSInteger)summonerID block:(RKGamesResultBlock)completion
+{
+    NSString *part = [NSString stringWithFormat:@"game/by-summoner/%ld/recent", (long)summonerID];
+    return [self.request sendGetRequestWithURLPart:part version:RKGameVersion block:^(NSDictionary *result, NSError *error) {
+        if (error) {
+            completion(nil, error);
+        } else {
+            NSArray *games = result[@"games"];
+            completion(games, nil);
+        }
+    }];
+}
 
 #pragma mark - Leagues
 
@@ -142,7 +138,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 {
     NSString *summoners = [summonerNames componentsJoinedByString:@","];
     NSString *part = [NSString stringWithFormat:@"/summoner/by-name/%@", summoners];
-    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+    return [self.request sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);
         } else {
@@ -156,7 +152,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 {
     NSString *summoners = [summonerIDs componentsJoinedByString:@","];
     NSString *part = [NSString stringWithFormat:@"/summoner/%@", summoners];
-    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+    return [self.request sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);
         } else {
@@ -170,7 +166,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 {
     NSString *summoners = [summonerIDs componentsJoinedByString:@","];
     NSString *part = [NSString stringWithFormat:@"/summoner/%@/masteries", summoners];
-    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+    return [self.request sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);
         } else {
@@ -187,7 +183,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 {
     NSString *summoners = [summonerIDs componentsJoinedByString:@","];
     NSString *part = [NSString stringWithFormat:@"/summoner/%@/name", summoners];
-    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+    return [self.request sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);
         } else {
@@ -200,7 +196,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 {
     NSString *summoners = [summonerIDs componentsJoinedByString:@","];
     NSString *part = [NSString stringWithFormat:@"/summoner/%@/runes", summoners];
-    return [self sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
+    return [self.request sendGetRequestWithURLPart:part version:RKSummonerVersion block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);
         } else {
@@ -222,42 +218,5 @@ static NSString * const RKChampionEndpoint = @"/champion";
 //- (NSOperation *)getTeamsWithTeamIDs:(NSArray *)teamIDs block:(RKDictionaryResultBlock)completion
 //{
 //}
-
-#pragma mark - Request
-
-- (NSOperation *)sendGetRequestWithURLPart:(NSString *)part version:(NSString *)version block:(RKOperationCompletionBlock)completion
-{
-    return [self sendGetRequestWithURLPart:part version:version parameters:nil block:completion];
-}
-
-- (NSOperation *)sendGetRequestWithURLPart:(NSString *)part version:(NSString *)version parameters:(NSDictionary *)parameters block:(RKOperationCompletionBlock)completion
-{
-    NSURL *url = [self _requestURLWithURLPart:part version:version parameters:parameters];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    RKOperation *operation = [[RKOperation alloc] initWithRequest:request completionBlock:completion];
-    [self.operationQueue addOperation:operation];
-    return operation;
-}
-
-- (NSURL *)_requestURLWithURLPart:(NSString *)part version:(NSString *)version parameters:(NSDictionary *)parameters
-{
-    NSString *regionHost = [NSString stringWithFormat:@"%@.%@", self.region, RKAPIHost];
-    NSString *path = [NSString stringWithFormat:@"%@/%@/v%@%@", RKAPIEndpoint, self.region, version, part];
-    
-    NSMutableString *queryString = [NSMutableString stringWithFormat:@"?api_key=%@", self.APIKey];
-    [parameters enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
-        if ([value isKindOfClass:NSNumber.class]) {
-            if ([value isEqual:@YES]) {
-                value = @"true";
-            } else if ([value isEqual:@NO]) {
-                value = @"false";
-            }
-        }
-        [queryString appendFormat:@"&%@=%@", key, value];
-    }];
-
-    path = [NSString stringWithFormat:@"%@%@", path, queryString];
-    return [[NSURL alloc] initWithScheme:@"https" host:regionHost path:path];
-}
 
 @end
