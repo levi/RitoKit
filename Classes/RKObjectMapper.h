@@ -20,6 +20,8 @@
 @optional
 
 + (NSDictionary *)arrayKeyMapping;
++ (NSDictionary *)enumKeyMapping;
++ (NSUInteger)enumValueForKey:(NSString *)key value:(id)value;
 
 @end
 

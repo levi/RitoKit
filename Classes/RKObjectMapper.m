@@ -84,6 +84,11 @@
     NSString *typeAttribute = [self typeAttributeWithPropertyName:key];
     
     if (!typeAttribute) return NO;
+    
+    if ([self isEnumProperty:key]) {
+        *value = @([self.classType enumValueForKey:key value:*value]);
+        return *value != nil;
+    }
 
     if ([self isClassTypeAttribute:typeAttribute]) {
         // ie. T@"NSString" --> NSString
@@ -171,6 +176,14 @@
 - (BOOL)isClassTypeAttribute:(NSString *)typeAttribute
 {
     return [typeAttribute hasPrefix:@"T@"];
+}
+
+- (BOOL)isEnumProperty:(NSString *)key
+{
+    if ([self.classType enumKeyMapping]) {
+        return [self.classType enumKeyMapping][key] != nil;
+    }
+    return NO;
 }
 
 /** Look up class type to transform array elements into

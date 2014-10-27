@@ -94,7 +94,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
         if (error) {
             completion(nil, error);
         } else {
-            NSArray *games = result[@"games"];
+            NSArray *games = [RKObjectMapper arrayFromResponse:result[@"games"] class:[RKGame class]];
             completion(games, nil);
         }
     }];

@@ -7,23 +7,28 @@
 //
 
 @import Foundation;
+#import "RKObjectMapper.h"
 
-typedef NS_ENUM(NSInteger, RKGameMode) {
+@class RKRawStats;
+
+typedef NS_ENUM(NSUInteger, RKGameMode) {
     RKGameModeClassic,
     RKGameModeOdin,
     RKGameModeAram,
     RKGameModeTutorial,
     RKGameModeOneForAll,
+    RKGameModeAscension,
     RKGameModeFirstBlood,
+    RKGameModeHexakill,
 };
 
-typedef NS_ENUM(NSInteger, RKGameType) {
+typedef NS_ENUM(NSUInteger, RKGameType) {
     RKGameTypeCustomGame,
     RKGameTypeMatchedGame,
     RKGameTypeTutorialGame,
 };
 
-typedef NS_ENUM(NSInteger, RKGameSubType) {
+typedef NS_ENUM(NSUInteger, RKGameSubType) {
     RKGameSubTypeNone,
     RKGameSubTypeNormal,
     RKGameSubTypeBot,
@@ -42,10 +47,13 @@ typedef NS_ENUM(NSInteger, RKGameSubType) {
     RKGameSubTypeFirstBlood2x2,
     RKGameSubTypeSR6x6,
     RKGameSubTypeURF,
-    RKGameSubTypeURFBot
+    RKGameSubTypeURFBot,
+    RKGameSubTypeNightmareBot,
+    RKGameSubTypeAscension,
+    RKGameSubTypeHexakill,
 };
 
-@interface RKGame : NSObject
+@interface RKGame : NSObject <RKObjectMapping>
 
 @property (nonatomic, assign) NSInteger championID;
 @property (nonatomic, strong) NSDate *createDate;
@@ -53,14 +61,14 @@ typedef NS_ENUM(NSInteger, RKGameSubType) {
 @property (nonatomic, assign) NSInteger gameID;
 @property (nonatomic, assign) RKGameMode gameMode;
 @property (nonatomic, assign) RKGameType gameType;
-@property (nonatomic, assign) BOOL invalid;
+@property (nonatomic, assign) RKGameSubType gameSubType;
+@property (nonatomic, assign) BOOL isInvalid;
 @property (nonatomic, assign) NSInteger IPEarned;
 @property (nonatomic, assign) NSInteger level;
 @property (nonatomic, assign) NSInteger mapID;
 @property (nonatomic, assign) NSInteger firstSpellID;
 @property (nonatomic, assign) NSInteger secondSpellID;
-@property (nonatomic, strong) id stats;
-@property (nonatomic, assign) RKGameSubType subType;
+@property (nonatomic, strong) RKRawStats *stats;
 @property (nonatomic, assign) NSInteger teamID;
 
 @end

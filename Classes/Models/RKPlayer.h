@@ -7,11 +7,17 @@
 //
 
 @import Foundation;
+#import "RKObjectMapper.h"
+
+typedef NS_ENUM(NSUInteger, RKPlayerTeam) {
+    RKPlayerTeamBlue = 100,
+    RKPlayerTeamPurple = 200,
+};
 
 @interface RKPlayer : NSObject
 
 @property (nonatomic, assign) NSInteger championID;
 @property (nonatomic, assign) NSInteger summonerID;
-@property (nonatomic, assign) NSInteger teamID;
+@property (nonatomic, assign) RKPlayerTeam team;
 
 @end

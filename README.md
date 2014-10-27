@@ -10,7 +10,7 @@ RiotKit is an Objective-C wrapper around the Riot Games Developer API, currently
 RiotKit is available on CocoaPods. Just add this to your PodFile:
 
 ```ruby
-pod 'RiotKit', '~> 0.0.2'
+pod 'RiotKit', '~> 0.0.3'
 ```
 
 ## Usage
@@ -35,7 +35,6 @@ RiotKit *riot = [[RiotKit alloc] initWithAPIKey:@"YOUR-API-KEY" region:RKRegionN
 
 RiotKit is still a work in progress and many endpoints are stubbed out during this early release. The future roadmap consists of:
 
-- Games
 - Leagues
 - Stats
 - Teams

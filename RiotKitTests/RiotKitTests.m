@@ -138,9 +138,10 @@ static NSTimeInterval kRequestTimeout = 5.0;
             XCTAssert(game.gameID > 0);
             XCTAssert(game.IPEarned > 0);
             XCTAssert(game.firstSpellID > 0);
-            XCTAssert(game.teamID > 0);
             XCTAssert(game.secondSpellID > 0);
-            XCTAssert(game.gameMode);
+            XCTAssert(game.gameMode >= 0);
+            XCTAssert(game.gameType >= 0);
+            XCTAssert(game.gameSubType >= 0);
             XCTAssert(game.mapID > 0);
         }
         
