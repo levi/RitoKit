@@ -1,6 +1,6 @@
 //
-//  RiotKit.h
-//  RiotKit
+//  RitoKit.h
+//  RitoKit
 //
 //  Created by Levi McCallum on 7/8/14.
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
@@ -21,7 +21,7 @@ typedef void (^RKRankedStatsResultBlock)(RKRankedStats *rankedStats, NSError *er
 typedef void (^RKPlayerStatsSummaryResultBlock)(RKPlayerStatsSummary *playerStatsSummary, NSError *error);
 typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
 
-@interface RiotKit : NSObject
+@interface RitoKit : NSObject
 
 @property (nonatomic, strong) NSString *APIKey;
 @property (nonatomic, strong) NSString *region;

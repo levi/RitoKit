@@ -1,6 +1,6 @@
 //
 //  RKConstants.h
-//  RiotKit
+//  RitoKit
 //
 //  Created by Levi McCallum on 10/24/14.
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
@@ -30,7 +30,7 @@ extern NSString * const RKTeamVersion;
 extern NSString * const RKAPIHost;
 extern NSString * const RKAPIEndpoint;
 
-extern NSString * const RiotKitErrorDomain;
+extern NSString * const RitoKitErrorDomain;
 
 typedef NS_ENUM(NSInteger, RKErrorCode) {
     RKErrorCodeBadRequest = 400,

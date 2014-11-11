@@ -1,6 +1,6 @@
 //
 //  RKOperation.m
-//  RiotKit
+//  RitoKit
 //
 //  Created by Levi McCallum on 7/8/14.
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
@@ -9,7 +9,7 @@
 #import "RKConstants.h"
 #import "RKOperation.h"
 
-#import "RiotKit.h"
+#import "RitoKit.h"
 
 @interface RKOperation ()
 
@@ -64,7 +64,7 @@
     
     if ([JSONResult objectForKey:@"status"]) {
         NSInteger code = [(NSNumber *)[JSONResult valueForKeyPath:@"status.status_code"] integerValue];
-        NSError *requestError = [NSError errorWithDomain:RiotKitErrorDomain code:code userInfo:nil];
+        NSError *requestError = [NSError errorWithDomain:RitoKitErrorDomain code:code userInfo:nil];
         self.completion(nil, requestError);
         return;
     }

@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B19A020196DD513009AA715 /* RiotKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C04D196C7FA400D9FEAA /* RiotKit.m */; };
+		9B19A020196DD513009AA715 /* RitoKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C04D196C7FA400D9FEAA /* RitoKit.m */; };
 		9B19A023196E1122009AA715 /* RKObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19A022196E1122009AA715 /* RKObjectMapper.m */; };
 		9B31D3C719F5414B005E0442 /* v1.2_champions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B31D3C519F5414B005E0442 /* v1.2_champions.json */; };
 		9B31D3C819F5414B005E0442 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B31D3C619F5414B005E0442 /* TemplateIcon2x.png */; };
 		9B7DE2A519FF24370025701E /* v2.5_league_summoner_id.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DE2A319FF24370025701E /* v2.5_league_summoner_id.json */; };
 		9B7DE2A619FF24370025701E /* v1.2_champions_free.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DE2A419FF24370025701E /* v1.2_champions_free.json */; };
-		9BB2BFEB196B651000D9FEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFEA196B651000D9FEAA /* main.m */; };
-		9BB2BFEE196B651000D9FEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFED196B651000D9FEAA /* AppDelegate.m */; };
-		9BB2BFF1196B651000D9FEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFF0196B651000D9FEAA /* ViewController.m */; };
+		9BAA9CDD1A12A3F30022CE1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA9CDA1A12A3F20022CE1C /* AppDelegate.m */; };
+		9BAA9CDE1A12A3F30022CE1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA9CDC1A12A3F30022CE1C /* ViewController.m */; };
+		9BAA9CE41A12A4050022CE1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA9CE21A12A4050022CE1C /* main.m */; };
+		9BAA9CE61A12A4390022CE1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAA9CDF1A12A3FD0022CE1C /* Main.storyboard */; };
+		9BAA9CE71A12A43F0022CE1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BAA9CE11A12A4050022CE1C /* Info.plist */; };
 		9BB2C00D196B679000D9FEAA /* RKChampion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C00C196B679000D9FEAA /* RKChampion.m */; };
 		9BB2C010196B680C00D9FEAA /* RKGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C00F196B680C00D9FEAA /* RKGame.m */; };
 		9BB2C013196B6A4E00D9FEAA /* RKPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C012196B6A4E00D9FEAA /* RKPlayer.m */; };
@@ -37,9 +39,9 @@
 		9BB2C044196C77B900D9FEAA /* RKAggregatedStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C043196C77B900D9FEAA /* RKAggregatedStats.m */; };
 		9BB2C047196C7A2400D9FEAA /* RKRankedStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C046196C7A2400D9FEAA /* RKRankedStats.m */; };
 		9BB2C04A196C7A5B00D9FEAA /* RKChampionStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C049196C7A5B00D9FEAA /* RKChampionStats.m */; };
-		9BB2C04E196C7FA400D9FEAA /* RiotKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C04D196C7FA400D9FEAA /* RiotKit.m */; };
+		9BB2C04E196C7FA400D9FEAA /* RitoKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C04D196C7FA400D9FEAA /* RitoKit.m */; };
 		9BB2C052196CA53800D9FEAA /* RKOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C051196CA53800D9FEAA /* RKOperation.m */; };
-		9BB2C059196DCB8400D9FEAA /* RiotKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C001196B651000D9FEAA /* RiotKitTests.m */; };
+		9BB2C059196DCB8400D9FEAA /* RitoKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2C001196B651000D9FEAA /* RitoKitTests.m */; };
 		9BB6C2A019F863E300971766 /* RKFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6C29F19F863E300971766 /* RKFixture.m */; };
 		9BBFAD2B19F9F21F00EEC8C0 /* RKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD2A19F9F21F00EEC8C0 /* RKRequest.m */; };
 		9BBFAD2E19F9F2B000EEC8C0 /* RKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */; };
@@ -55,8 +57,6 @@
 		9BBFAD4619FE19B900EEC8C0 /* v1.4_summoner_ids_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4519FE19B900EEC8C0 /* v1.4_summoner_ids_name.json */; };
 		9BBFAD4819FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4719FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json */; };
 		9BBFAD4A19FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD4919FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json */; };
-		9BD8B2CF19736CEA00C7F22E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BD8B2CE19736CEA00C7F22E /* README.md */; };
-		9BD8B2D1197371D400C7F22E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD8B2D0197371D400C7F22E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,15 +97,17 @@
 		9B31D3C619F5414B005E0442 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 		9B7DE2A319FF24370025701E /* v2.5_league_summoner_id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v2.5_league_summoner_id.json; sourceTree = "<group>"; };
 		9B7DE2A419FF24370025701E /* v1.2_champions_free.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.2_champions_free.json; sourceTree = "<group>"; };
-		9BB2BFE5196B651000D9FEAA /* RiotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BB2BFEA196B651000D9FEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RiotKitDemo/main.m; sourceTree = SOURCE_ROOT; };
-		9BB2BFEC196B651000D9FEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RiotKitDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		9BB2BFED196B651000D9FEAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RiotKitDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		9BB2BFEF196B651000D9FEAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RiotKitDemo/ViewController.h; sourceTree = SOURCE_ROOT; };
-		9BB2BFF0196B651000D9FEAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = RiotKitDemo/ViewController.m; sourceTree = SOURCE_ROOT; };
-		9BB2BFFB196B651000D9FEAA /* RiotKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiotKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAA9CD91A12A3F20022CE1C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BAA9CDA1A12A3F20022CE1C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BAA9CDB1A12A3F30022CE1C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9BAA9CDC1A12A3F30022CE1C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BAA9CDF1A12A3FD0022CE1C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9BAA9CE11A12A4050022CE1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BAA9CE21A12A4050022CE1C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BB2BFE5196B651000D9FEAA /* RitoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RitoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB2BFFB196B651000D9FEAA /* RitoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RitoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB2C000196B651000D9FEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BB2C001196B651000D9FEAA /* RiotKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiotKitTests.m; sourceTree = "<group>"; };
+		9BB2C001196B651000D9FEAA /* RitoKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RitoKitTests.m; sourceTree = "<group>"; };
 		9BB2C00B196B679000D9FEAA /* RKChampion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKChampion.h; path = Classes/Models/RKChampion.h; sourceTree = SOURCE_ROOT; };
 		9BB2C00C196B679000D9FEAA /* RKChampion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKChampion.m; path = Classes/Models/RKChampion.m; sourceTree = SOURCE_ROOT; };
 		9BB2C00E196B680C00D9FEAA /* RKGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKGame.h; path = Classes/Models/RKGame.h; sourceTree = SOURCE_ROOT; };
@@ -148,8 +150,8 @@
 		9BB2C046196C7A2400D9FEAA /* RKRankedStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKRankedStats.m; path = Classes/Models/RKRankedStats.m; sourceTree = SOURCE_ROOT; };
 		9BB2C048196C7A5B00D9FEAA /* RKChampionStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKChampionStats.h; path = Classes/Models/RKChampionStats.h; sourceTree = SOURCE_ROOT; };
 		9BB2C049196C7A5B00D9FEAA /* RKChampionStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKChampionStats.m; path = Classes/Models/RKChampionStats.m; sourceTree = SOURCE_ROOT; };
-		9BB2C04C196C7FA400D9FEAA /* RiotKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RiotKit.h; path = Classes/RiotKit.h; sourceTree = SOURCE_ROOT; };
-		9BB2C04D196C7FA400D9FEAA /* RiotKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RiotKit.m; path = Classes/RiotKit.m; sourceTree = SOURCE_ROOT; };
+		9BB2C04C196C7FA400D9FEAA /* RitoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RitoKit.h; path = Classes/RitoKit.h; sourceTree = SOURCE_ROOT; };
+		9BB2C04D196C7FA400D9FEAA /* RitoKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RitoKit.m; path = Classes/RitoKit.m; sourceTree = SOURCE_ROOT; };
 		9BB2C04F196C816300D9FEAA /* RKModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKModels.h; path = Classes/Models/RKModels.h; sourceTree = SOURCE_ROOT; };
 		9BB2C050196CA53800D9FEAA /* RKOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKOperation.h; path = Classes/RKOperation.h; sourceTree = SOURCE_ROOT; };
 		9BB2C051196CA53800D9FEAA /* RKOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKOperation.m; path = Classes/RKOperation.m; sourceTree = SOURCE_ROOT; };
@@ -172,8 +174,6 @@
 		9BBFAD4719FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_id_runes.json; sourceTree = "<group>"; };
 		9BBFAD4919FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_ids_runes.json; sourceTree = "<group>"; };
 		9BD8B2CE19736CEA00C7F22E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
-		9BD8B2D0197371D400C7F22E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = RiotKitDemo/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		9BD8B2D21973722400C7F22E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RiotKitDemo/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +197,8 @@
 		9BB2BFDC196B651000D9FEAA = {
 			isa = PBXGroup;
 			children = (
-				9BB2C04B196C7D7E00D9FEAA /* RiotKit */,
-				9BB2BFFE196B651000D9FEAA /* RiotKitTests */,
+				9BB2C04B196C7D7E00D9FEAA /* RitoKit */,
+				9BB2BFFE196B651000D9FEAA /* RitoKitTests */,
 				9BB2BFE7196B651000D9FEAA /* Demo App */,
 				9BB2BFE6196B651000D9FEAA /* Products */,
 				DF9990CD1FB74477B9DDF25E /* Frameworks */,
@@ -208,8 +208,8 @@
 		9BB2BFE6196B651000D9FEAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BB2BFE5196B651000D9FEAA /* RiotKit.app */,
-				9BB2BFFB196B651000D9FEAA /* RiotKitTests.xctest */,
+				9BB2BFE5196B651000D9FEAA /* RitoKit.app */,
+				9BB2BFFB196B651000D9FEAA /* RitoKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,30 +217,30 @@
 		9BB2BFE7196B651000D9FEAA /* Demo App */ = {
 			isa = PBXGroup;
 			children = (
-				9BB2BFEC196B651000D9FEAA /* AppDelegate.h */,
-				9BB2BFED196B651000D9FEAA /* AppDelegate.m */,
-				9BB2BFEF196B651000D9FEAA /* ViewController.h */,
-				9BB2BFF0196B651000D9FEAA /* ViewController.m */,
+				9BAA9CD91A12A3F20022CE1C /* AppDelegate.h */,
+				9BAA9CDA1A12A3F20022CE1C /* AppDelegate.m */,
+				9BAA9CDB1A12A3F30022CE1C /* ViewController.h */,
+				9BAA9CDC1A12A3F30022CE1C /* ViewController.m */,
 				9BB2BFE8196B651000D9FEAA /* Supporting Files */,
-				9BD8B2D0197371D400C7F22E /* Main.storyboard */,
+				9BAA9CDF1A12A3FD0022CE1C /* Main.storyboard */,
 			);
 			name = "Demo App";
-			path = RiotKit;
+			path = RitoKitDemo;
 			sourceTree = "<group>";
 		};
 		9BB2BFE8196B651000D9FEAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9BD8B2D21973722400C7F22E /* Info.plist */,
-				9BB2BFEA196B651000D9FEAA /* main.m */,
+				9BAA9CE11A12A4050022CE1C /* Info.plist */,
+				9BAA9CE21A12A4050022CE1C /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9BB2BFFE196B651000D9FEAA /* RiotKitTests */ = {
+		9BB2BFFE196B651000D9FEAA /* RitoKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				9BB2C001196B651000D9FEAA /* RiotKitTests.m */,
+				9BB2C001196B651000D9FEAA /* RitoKitTests.m */,
 				9BBFAD2F19F9FE4600EEC8C0 /* Fixtures */,
 				9BB6C29E19F863E300971766 /* RKFixture.h */,
 				9BB6C29F19F863E300971766 /* RKFixture.m */,
@@ -249,7 +249,7 @@
 				9BBFAD3019FBD0DE00EEC8C0 /* RKTestRequest.h */,
 				9BBFAD3119FBD0DE00EEC8C0 /* RKTestRequest.m */,
 			);
-			path = RiotKitTests;
+			path = RitoKitTests;
 			sourceTree = "<group>";
 		};
 		9BB2BFFF196B651000D9FEAA /* Supporting Files */ = {
@@ -311,15 +311,15 @@
 			path = ../Classes/Models;
 			sourceTree = "<group>";
 		};
-		9BB2C04B196C7D7E00D9FEAA /* RiotKit */ = {
+		9BB2C04B196C7D7E00D9FEAA /* RitoKit */ = {
 			isa = PBXGroup;
 			children = (
 				9BBFAD2919F9F21F00EEC8C0 /* RKRequest.h */,
 				9BBFAD2A19F9F21F00EEC8C0 /* RKRequest.m */,
 				9BD8B2CE19736CEA00C7F22E /* README.md */,
 				9BB2C020196B6ECA00D9FEAA /* Models */,
-				9BB2C04C196C7FA400D9FEAA /* RiotKit.h */,
-				9BB2C04D196C7FA400D9FEAA /* RiotKit.m */,
+				9BB2C04C196C7FA400D9FEAA /* RitoKit.h */,
+				9BB2C04D196C7FA400D9FEAA /* RitoKit.m */,
 				9BBFAD2C19F9F2B000EEC8C0 /* RKConstants.h */,
 				9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */,
 				9B19A021196E1122009AA715 /* RKObjectMapper.h */,
@@ -327,6 +327,7 @@
 				9BB2C050196CA53800D9FEAA /* RKOperation.h */,
 				9BB2C051196CA53800D9FEAA /* RKOperation.m */,
 			);
+			name = RitoKit;
 			path = RiotKit;
 			sourceTree = "<group>";
 		};
@@ -360,9 +361,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9BB2BFE4196B651000D9FEAA /* RiotKit */ = {
+		9BB2BFE4196B651000D9FEAA /* RitoKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BB2C005196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RiotKit" */;
+			buildConfigurationList = 9BB2C005196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RitoKit" */;
 			buildPhases = (
 				9BB2BFE1196B651000D9FEAA /* Sources */,
 				9BB2BFE2196B651000D9FEAA /* Frameworks */,
@@ -372,14 +373,14 @@
 			);
 			dependencies = (
 			);
-			name = RiotKit;
+			name = RitoKit;
 			productName = RiotKit;
-			productReference = 9BB2BFE5196B651000D9FEAA /* RiotKit.app */;
+			productReference = 9BB2BFE5196B651000D9FEAA /* RitoKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9BB2BFFA196B651000D9FEAA /* RiotKitTests */ = {
+		9BB2BFFA196B651000D9FEAA /* RitoKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BB2C008196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RiotKitTests" */;
+			buildConfigurationList = 9BB2C008196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RitoKitTests" */;
 			buildPhases = (
 				9BB2BFF7196B651000D9FEAA /* Sources */,
 				9BB2BFF8196B651000D9FEAA /* Frameworks */,
@@ -393,9 +394,9 @@
 				9BB2C058196DCB6A00D9FEAA /* PBXTargetDependency */,
 				9BB2C05B196DCBAE00D9FEAA /* PBXTargetDependency */,
 			);
-			name = RiotKitTests;
+			name = RitoKitTests;
 			productName = RiotKitTests;
-			productReference = 9BB2BFFB196B651000D9FEAA /* RiotKitTests.xctest */;
+			productReference = 9BB2BFFB196B651000D9FEAA /* RitoKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -416,7 +417,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9BB2BFE0196B651000D9FEAA /* Build configuration list for PBXProject "RiotKit" */;
+			buildConfigurationList = 9BB2BFE0196B651000D9FEAA /* Build configuration list for PBXProject "RitoKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -429,8 +430,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9BB2BFE4196B651000D9FEAA /* RiotKit */,
-				9BB2BFFA196B651000D9FEAA /* RiotKitTests */,
+				9BB2BFE4196B651000D9FEAA /* RitoKit */,
+				9BB2BFFA196B651000D9FEAA /* RitoKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -440,8 +441,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BD8B2D1197371D400C7F22E /* Main.storyboard in Resources */,
-				9BD8B2CF19736CEA00C7F22E /* README.md in Resources */,
+				9BAA9CE71A12A43F0022CE1C /* Info.plist in Resources */,
+				9BAA9CE61A12A4390022CE1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,19 +475,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB2C023196C6F2200D9FEAA /* RKTeam.m in Sources */,
-				9BB2BFF1196B651000D9FEAA /* ViewController.m in Sources */,
+				9BAA9CDE1A12A3F30022CE1C /* ViewController.m in Sources */,
 				9BB2C035196C755600D9FEAA /* RKRuneSlot.m in Sources */,
 				9BB2C013196B6A4E00D9FEAA /* RKPlayer.m in Sources */,
 				9BB2C03B196C75C900D9FEAA /* RKMastery.m in Sources */,
 				9BB2C02C196C713A00D9FEAA /* RKTeamStatDetail.m in Sources */,
-				9BB2BFEE196B651000D9FEAA /* AppDelegate.m in Sources */,
 				9BB2C029196C704800D9FEAA /* RKMatchHistorySummary.m in Sources */,
-				9BB2BFEB196B651000D9FEAA /* main.m in Sources */,
 				9BB2C016196B6B5200D9FEAA /* RKRawStats.m in Sources */,
 				9BB2C041196C769700D9FEAA /* RKPlayerStatsSummary.m in Sources */,
+				9BAA9CE41A12A4050022CE1C /* main.m in Sources */,
 				9BB2C019196B6CB800D9FEAA /* RKLeague.m in Sources */,
 				9BB2C044196C77B900D9FEAA /* RKAggregatedStats.m in Sources */,
-				9BB2C04E196C7FA400D9FEAA /* RiotKit.m in Sources */,
+				9BB2C04E196C7FA400D9FEAA /* RitoKit.m in Sources */,
 				9BB2C010196B680C00D9FEAA /* RKGame.m in Sources */,
 				9BBFAD2E19F9F2B000EEC8C0 /* RKConstants.m in Sources */,
 				9BB2C038196C759400D9FEAA /* RKMasteryPage.m in Sources */,
@@ -495,6 +495,7 @@
 				9BB2C03E196C760100D9FEAA /* RKSummoner.m in Sources */,
 				9BB2C032196C751600D9FEAA /* RKRunePage.m in Sources */,
 				9BB2C02F196C746900D9FEAA /* RKTeamMemberInfo.m in Sources */,
+				9BAA9CDD1A12A3F30022CE1C /* AppDelegate.m in Sources */,
 				9BB2C052196CA53800D9FEAA /* RKOperation.m in Sources */,
 				9BB2C026196C6FD800D9FEAA /* RKRoster.m in Sources */,
 				9BB2C01F196B6E5600D9FEAA /* RKMiniSeries.m in Sources */,
@@ -512,8 +513,8 @@
 				9BBFAD3219FBD0DE00EEC8C0 /* RKTestRequest.m in Sources */,
 				9BB6C2A019F863E300971766 /* RKFixture.m in Sources */,
 				9BBFAD3319FCE75C00EEC8C0 /* RKConstants.m in Sources */,
-				9B19A020196DD513009AA715 /* RiotKit.m in Sources */,
-				9BB2C059196DCB8400D9FEAA /* RiotKitTests.m in Sources */,
+				9B19A020196DD513009AA715 /* RitoKit.m in Sources */,
+				9BB2C059196DCB8400D9FEAA /* RitoKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,22 +523,22 @@
 /* Begin PBXTargetDependency section */
 		9BB2BFFD196B651000D9FEAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BB2BFE4196B651000D9FEAA /* RiotKit */;
+			target = 9BB2BFE4196B651000D9FEAA /* RitoKit */;
 			targetProxy = 9BB2BFFC196B651000D9FEAA /* PBXContainerItemProxy */;
 		};
 		9BB2C056196DCB6900D9FEAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BB2BFE4196B651000D9FEAA /* RiotKit */;
+			target = 9BB2BFE4196B651000D9FEAA /* RitoKit */;
 			targetProxy = 9BB2C055196DCB6900D9FEAA /* PBXContainerItemProxy */;
 		};
 		9BB2C058196DCB6A00D9FEAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BB2BFE4196B651000D9FEAA /* RiotKit */;
+			target = 9BB2BFE4196B651000D9FEAA /* RitoKit */;
 			targetProxy = 9BB2C057196DCB6A00D9FEAA /* PBXContainerItemProxy */;
 		};
 		9BB2C05B196DCBAE00D9FEAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BB2BFE4196B651000D9FEAA /* RiotKit */;
+			target = 9BB2BFE4196B651000D9FEAA /* RitoKit */;
 			targetProxy = 9BB2C05A196DCBAE00D9FEAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -624,10 +625,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = RiotKitDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RitoKitDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RitoKit;
 			};
 			name = Debug;
 		};
@@ -636,10 +637,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = RiotKitDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RitoKitDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RitoKit;
 			};
 			name = Release;
 		};
@@ -655,9 +656,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RiotKitTests/Info.plist;
+				INFOPLIST_FILE = RitoKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RitoKitTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -670,9 +671,9 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RiotKitTests/Info.plist;
+				INFOPLIST_FILE = RitoKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RitoKitTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -680,7 +681,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BB2BFE0196B651000D9FEAA /* Build configuration list for PBXProject "RiotKit" */ = {
+		9BB2BFE0196B651000D9FEAA /* Build configuration list for PBXProject "RitoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BB2C003196B651000D9FEAA /* Debug */,
@@ -689,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BB2C005196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RiotKit" */ = {
+		9BB2C005196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RitoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BB2C006196B651000D9FEAA /* Debug */,
@@ -698,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BB2C008196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RiotKitTests" */ = {
+		9BB2C008196B651000D9FEAA /* Build configuration list for PBXNativeTarget "RitoKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BB2C009196B651000D9FEAA /* Debug */,

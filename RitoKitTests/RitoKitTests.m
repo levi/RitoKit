@@ -1,6 +1,6 @@
 //
-//  RiotKitTests.m
-//  RiotKitTests
+//  RitoKitTests.m
+//  RitoKitTests
 //
 //  Created by Levi McCallum on 7/7/14.
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
@@ -12,18 +12,18 @@
 #import "RKFixture.h"
 #import "RKTestRequest.h"
 #import "RKConstants.h"
-#import "RiotKit.h"
+#import "RitoKit.h"
 
 static NSString * const kTestAPIKey = @"8459d3c7-e4a3-47b7-8c02-1552265c4a96";
 static NSTimeInterval kRequestTimeout = 5.0;
 
-@interface RiotKitTests : XCTestCase
+@interface RitoKitTests : XCTestCase
 
-@property (nonatomic, strong) RiotKit *riot;
+@property (nonatomic, strong) RitoKit *riot;
 
 @end
 
-@implementation RiotKitTests
+@implementation RitoKitTests
 
 #pragma mark - Helpers
 
@@ -61,18 +61,18 @@ static NSTimeInterval kRequestTimeout = 5.0;
     return [[self summonerNames] firstObject];
 }
 
-- (RiotKit *)riotMockWithFixtureName:(NSString *)name version:(NSString *)version
+- (RitoKit *)riotMockWithFixtureName:(NSString *)name version:(NSString *)version
 {
     id JSONResponse = [RKFixture JSONWithFixtureName:name version:version];
     RKTestRequest *request = [[RKTestRequest alloc] initWithJSONResponse:JSONResponse];
-    return [[RiotKit alloc] initWithAPIKey:kTestAPIKey region:RKRegionNorthAmerica requestManager:request];
+    return [[RitoKit alloc] initWithAPIKey:kTestAPIKey region:RKRegionNorthAmerica requestManager:request];
 }
 
 #pragma mark - Setup/Teardown
 
 - (void)setUp {
     [super setUp];
-    _riot = [[RiotKit alloc] initWithAPIKey:kTestAPIKey region:RKRegionNorthAmerica];
+    _riot = [[RitoKit alloc] initWithAPIKey:kTestAPIKey region:RKRegionNorthAmerica];
 }
 
 - (void)tearDown {
@@ -85,7 +85,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetChampions
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Champions"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"champions" version:RKChampionVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"champions" version:RKChampionVersion];
     [rito getChampionsWithBlock:^(NSArray *champions, NSError *error) {
         XCTAssertNotNil(champions);
         XCTAssert(champions.count > 0, @"Should have a populated array of champions");
@@ -98,7 +98,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetFreeToPlayChampions
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Free To Play Champions"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"champions_free" version:RKChampionVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"champions_free" version:RKChampionVersion];
     [rito getFreeToPlayChampionsWithBlock:^(NSArray *champions, NSError *error) {
         XCTAssert(champions, @"Should return champions");
         XCTAssert(champions.count == 10, @"Should have 10 champions. Has %lu", (unsigned long)champions.count);
@@ -113,7 +113,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetChampionWithID
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Champion With ID"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"champion_single" version:RKChampionVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"champion_single" version:RKChampionVersion];
     [rito getChampionWithID:34 block:^(RKChampion *champion, NSError *error) {
         XCTAssert(champion, @"Should return champion");
         XCTAssert(champion.ID == 34, @"Should fetch the right champion");
@@ -129,7 +129,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Recent Games With Summoner ID"];
 
     NSInteger summonerID = [[self summonerID] integerValue];
-    RiotKit *rito = [self riotMockWithFixtureName:@"game_recent" version:RKGameVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"game_recent" version:RKGameVersion];
     [rito getRecentGamesWithSummonerID:summonerID block:^(NSArray *games, NSError *error) {
         XCTAssert(games.count > 0, @"should return an array of games");
         XCTAssertNil(error, @"should not have an error");
@@ -216,7 +216,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetSummonersWithSingleName
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Summoners With Single Name"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_name" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_name" version:RKSummonerVersion];
     [rito getSummonersWithNames:@[@"doublelift"] block:^(NSDictionary *objects, NSError *error) {
         XCTAssert(objects, @"Should return summoners");
         XCTAssert([objects[@"doublelift"] isKindOfClass:RKSummoner.class], @"should have summoner named key with a summoner object");
@@ -234,7 +234,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetSummonersWithSingleID
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Summoners With Single ID"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_id" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_id" version:RKSummonerVersion];
     [rito getSummonersWithIDs:@[@"20132258"] block:^(NSDictionary *objects, NSError *error) {
         XCTAssert(objects, @"Should return summoners");
         XCTAssert([objects[@"20132258"] isKindOfClass:RKSummoner.class], @"should have summoner id key with a summoner object");
@@ -254,7 +254,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetMasteryPagesWithSingleSummonerID
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Mastery Pages With Single Summoner ID"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_id_masteries" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_id_masteries" version:RKSummonerVersion];
     [rito getMasteryPagesWithSummonerIDs:@[@"20132258"] block:^(NSDictionary *objects, NSError *error) {
         XCTAssertNil(error, @"error should be nil");
         XCTAssert(objects, @"object results should be populated");
@@ -277,7 +277,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetMasteryPagesWithMultipleSummonerIDs
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Mastery Pages With Multiple Summoner IDs"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_ids_masteries" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_ids_masteries" version:RKSummonerVersion];
     [rito getMasteryPagesWithSummonerIDs:[self summonerIDs] block:^(NSDictionary *objects, NSError *error) {
         XCTAssertNil(error, @"error should be nil");
         XCTAssert(objects, @"object results should be populated");
@@ -291,7 +291,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Master Pages With Single SummonerID"];
     NSString *ID = [[self summonerIDs] firstObject];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_id_name" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_id_name" version:RKSummonerVersion];
     [rito getSummonerNamesWithSummonerIDs:@[ID] block:^(NSDictionary *objects, NSError *error) {
         XCTAssertNil(error, @"error should be nil");
         XCTAssert(objects, @"object results should be populated");
@@ -304,7 +304,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetSummonerNamesWithMultipleSummonerIDs
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Summoner Names With Multiple Summoner IDs"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_ids_name" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_ids_name" version:RKSummonerVersion];
     [rito getSummonerNamesWithSummonerIDs:[self summonerIDs] block:^(NSDictionary *objects, NSError *error) {
         XCTAssertNil(error, @"error should be nil");
         XCTAssert(objects, @"object results should be populated");
@@ -322,7 +322,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Rune Pages with Single Summoner ID"];
 
     NSString *ID = [[self summonerIDs] firstObject];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_id_runes" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_id_runes" version:RKSummonerVersion];
     [rito getRunePagesWithSummonerIDs:@[ID] block:^(NSDictionary *objects, NSError *error) {
         XCTAssertNil(error, @"error should be nil");
         XCTAssert(objects, @"object results should be populated");
@@ -337,7 +337,7 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testGetRunePagesWithMultipleSummonerIDs
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"GET Rune Pages with Multiple Summoner IDs"];
-    RiotKit *rito = [self riotMockWithFixtureName:@"summoner_ids_runes" version:RKSummonerVersion];
+    RitoKit *rito = [self riotMockWithFixtureName:@"summoner_ids_runes" version:RKSummonerVersion];
     [rito getRunePagesWithSummonerIDs:[self summonerIDs] block:^(NSDictionary *objects, NSError *error) {
         XCTAssertNil(error, @"error should be nil");
         XCTAssert(objects, @"object results should be populated");
@@ -388,9 +388,9 @@ static NSTimeInterval kRequestTimeout = 5.0;
 - (void)testInvalidAPIKey
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"Invalid Request"];
-    RiotKit *newRiot = [[RiotKit alloc] initWithAPIKey:[self fakeAPIKey] region:RKRegionNorthAmerica];
+    RitoKit *newRiot = [[RitoKit alloc] initWithAPIKey:[self fakeAPIKey] region:RKRegionNorthAmerica];
     [newRiot getChampionsWithBlock:^(NSArray *champions, NSError *error) {
-        XCTAssertEqualObjects(error.domain, RiotKitErrorDomain);
+        XCTAssertEqualObjects(error.domain, RitoKitErrorDomain);
         XCTAssertEqual(error.code, RKErrorCodeUnauthorized);
         [expectation fulfill];
     }];

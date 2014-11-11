@@ -1,6 +1,6 @@
 //
-//  RiotKit.m
-//  RiotKit
+//  RitoKit.m
+//  RitoKit
 //
 //  Created by Levi McCallum on 7/8/14.
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
@@ -10,17 +10,17 @@
 #import "RKRequest.h"
 #import "RKOperation.h"
 
-#import "RiotKit.h"
+#import "RitoKit.h"
 
 static NSString * const RKChampionEndpoint = @"/champion";
 
-@interface RiotKit ()
+@interface RitoKit ()
 
 @property (nonatomic, strong) RKRequest *request;
 
 @end
 
-@implementation RiotKit
+@implementation RitoKit
 
 - (instancetype)initWithAPIKey:(NSString *)apiKey region:(NSString *)region
 {

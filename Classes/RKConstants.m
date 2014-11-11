@@ -1,6 +1,6 @@
 //
 //  RKConstants.m
-//  RiotKit
+//  RitoKit
 //
 //  Created by Levi McCallum on 10/24/14.
 //  Copyright (c) 2014 Levi McCallum. All rights reserved.
@@ -27,7 +27,7 @@ NSString * const RKStatsVersion = @"1.3";
 NSString * const RKSummonerVersion = @"1.4";
 NSString * const RKTeamVersion = @"2.3";
 
-NSString * const RiotKitErrorDomain = @"RiotKitErrorDomain";
+NSString * const RitoKitErrorDomain = @"RitoKitErrorDomain";
 
 NSString * const RKAPIHost = @"api.pvp.net";
 NSString * const RKAPIEndpoint = @"/api/lol";
