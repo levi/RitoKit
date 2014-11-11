@@ -48,10 +48,10 @@ typedef void (^RKLeagueResultBlock)(RKLeague *league, NSError *error);
  */
 - (NSOperation *)getRecentGamesWithSummonerID:(NSInteger)summonerID block:(RKGamesResultBlock)completion;
 
-///** Retrive leagues summoners belong to, mapped by summoner ID.
-// */
-//- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
-//
+/** Retrive leagues summoners belong to, mapped by summoner ID.
+ */
+- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;
+
 ///** Retrive league entries, mapped by summoner ID.
 // */
 //- (NSOperation *)getLeagueEntriesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion;

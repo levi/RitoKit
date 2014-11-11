@@ -7,6 +7,7 @@
 //
 
 @import Foundation;
+#import "RKObjectMapper.h"
 
 typedef NS_ENUM(NSInteger, RKLeagueQueue) {
     RKLeagueQueueRankedSolo5x5,
@@ -15,19 +16,20 @@ typedef NS_ENUM(NSInteger, RKLeagueQueue) {
 };
 
 typedef NS_ENUM(NSInteger, RKLeagueTier) {
-    RKLeagueChallenger,
-    RKLeagueDiamond,
-    RKLeaguePlatinum,
-    RKLeagueGold,
-    RKLeagueSilver,
-    RKLeagueBronze,
+    RKLeagueTierChallenger,
+    RKLeagueTierMaster,
+    RKLeagueTierDiamond,
+    RKLeagueTierPlatinum,
+    RKLeagueTierGold,
+    RKLeagueTierSilver,
+    RKLeagueTierBronze,
 };
 
-@interface RKLeague : NSObject
+@interface RKLeague : NSObject <RKObjectMapping>
 
 @property (nonatomic, strong) NSArray *entries;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, assign) NSInteger *participantID;
+@property (nonatomic, assign) NSInteger participantID;
 @property (nonatomic, assign) RKLeagueQueue queue;
 @property (nonatomic, assign) RKLeagueTier tier;
 

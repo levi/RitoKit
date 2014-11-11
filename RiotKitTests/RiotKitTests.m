@@ -154,6 +154,19 @@ static NSTimeInterval kRequestTimeout = 5.0;
 
 - (void)testGetLeaguesWithSingleSummonerID
 {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"GET Leagues with Single Summoner ID"];
+    [self.riot getLeaguesWithSummonerIDs:@[[self summonerID]] block:^(NSDictionary *objects, NSError *error) {
+        XCTAssertNil(error, @"should not have an error");
+        XCTAssert(objects.count == 1, @"should have leagues for given summoner ID");
+        RKLeague *league = (RKLeague *)objects[[self summonerID]];
+        XCTAssert(league.tier == RKLeagueTierChallenger);
+        XCTAssert(league.queue == RKLeagueQueueRankedSolo5x5);
+        XCTAssert(league.participantID == 20132258);
+        XCTAssert([league.name isEqualToString:@"Taric's Enforcers"]);
+        XCTAssert(league.entries.count > 0);
+        [expectation fulfill];
+    }];
+    [self waitForExpectationsWithTimeout:kRequestTimeout handler:nil];
 }
 
 - (void)testGetLeaguesWithMultipleSummonerIDs

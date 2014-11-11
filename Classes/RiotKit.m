@@ -89,7 +89,7 @@ static NSString * const RKChampionEndpoint = @"/champion";
 
 - (NSOperation *)getRecentGamesWithSummonerID:(NSInteger)summonerID block:(RKGamesResultBlock)completion
 {
-    NSString *part = [NSString stringWithFormat:@"game/by-summoner/%ld/recent", (long)summonerID];
+    NSString *part = [NSString stringWithFormat:@"/game/by-summoner/%ld/recent", (long)summonerID];
     return [self.request sendGetRequestWithURLPart:part version:RKGameVersion block:^(NSDictionary *result, NSError *error) {
         if (error) {
             completion(nil, error);
@@ -102,9 +102,19 @@ static NSString * const RKChampionEndpoint = @"/champion";
 
 #pragma mark - Leagues
 
-//- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
-//{
-//}
+- (NSOperation *)getLeaguesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
+{
+    NSString *summoners = [summonerIDs componentsJoinedByString:@","];
+    NSString *part = [NSString stringWithFormat:@"/league/by-summoner/%@", summoners];
+    return [self.request sendGetRequestWithURLPart:part version:RKLeagueVersion block:^(NSDictionary *result, NSError *error) {
+        if (error) {
+            completion(nil, error);
+        } else {
+            NSDictionary *objects = [RKObjectMapper dictionaryFromResponse:result class:RKLeague.class];
+            completion(objects, nil);
+        }
+    }];
+}
 
 //- (NSOperation *)getLeagueEntriesWithSummonerIDs:(NSArray *)summonerIDs block:(RKDictionaryResultBlock)completion
 //{

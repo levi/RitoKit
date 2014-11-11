@@ -7,14 +7,15 @@
 //
 
 @import Foundation;
+#import "RKObjectMapper.h"
 
-typedef NS_ENUM(NSInteger, RKMiniSeriesProgress) {
+typedef NS_ENUM(NSUInteger, RKMiniSeriesProgress) {
     RKMiniSeriesProgressWin,
     RKMiniSeriesProgressLoss,
     RKMiniSeriesProgressNotPlayed,
 };
 
-@interface RKMiniSeries : NSObject
+@interface RKMiniSeries : NSObject <RKObjectMapping>
 
 @property (nonatomic, assign) NSInteger losses;
 @property (nonatomic, assign) RKMiniSeriesProgress progress;

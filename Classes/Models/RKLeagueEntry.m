@@ -7,7 +7,29 @@
 //
 
 #import "RKLeagueEntry.h"
+#import "RKMiniSeries.h"
 
 @implementation RKLeagueEntry
+
++ (NSDictionary *)objectMapping
+{
+    return @{
+        @"division": RKMappingKey(division),
+        @"isFreshBlood": RKMappingKey(isFreshBlood),
+        @"isHotStreak": RKMappingKey(isHotStreak),
+        @"isInactive": RKMappingKey(isInactive),
+        @"isVeteran": RKMappingKey(isVeteran),
+        @"leaguePoints": RKMappingKey(leaguePoints),
+        @"miniSeries": RKMappingKey(miniSeries),
+        @"playerOrTeamId": RKMappingKey(playerOrTeamID),
+        @"playerOrTeamName": RKMappingKey(playerOrTeamName),
+        @"wins": RKMappingKey(wins),
+    };
+}
+
++ (NSDictionary *)arrayKeyMapping
+{
+    return @{ @"miniSeries": RKMiniSeries.class };
+}
 
 @end

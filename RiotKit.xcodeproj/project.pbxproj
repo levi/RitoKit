@@ -11,6 +11,8 @@
 		9B19A023196E1122009AA715 /* RKObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19A022196E1122009AA715 /* RKObjectMapper.m */; };
 		9B31D3C719F5414B005E0442 /* v1.2_champions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B31D3C519F5414B005E0442 /* v1.2_champions.json */; };
 		9B31D3C819F5414B005E0442 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B31D3C619F5414B005E0442 /* TemplateIcon2x.png */; };
+		9B7DE2A519FF24370025701E /* v2.5_league_summoner_id.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DE2A319FF24370025701E /* v2.5_league_summoner_id.json */; };
+		9B7DE2A619FF24370025701E /* v1.2_champions_free.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B7DE2A419FF24370025701E /* v1.2_champions_free.json */; };
 		9BB2BFEB196B651000D9FEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFEA196B651000D9FEAA /* main.m */; };
 		9BB2BFEE196B651000D9FEAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFED196B651000D9FEAA /* AppDelegate.m */; };
 		9BB2BFF1196B651000D9FEAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB2BFF0196B651000D9FEAA /* ViewController.m */; };
@@ -43,7 +45,6 @@
 		9BBFAD2E19F9F2B000EEC8C0 /* RKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */; };
 		9BBFAD3219FBD0DE00EEC8C0 /* RKTestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3119FBD0DE00EEC8C0 /* RKTestRequest.m */; };
 		9BBFAD3319FCE75C00EEC8C0 /* RKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */; };
-		9BBFAD3619FCEA4C00EEC8C0 /* v1.2_champions_free.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3419FCE92100EEC8C0 /* v1.2_champions_free.json */; };
 		9BBFAD3819FE0BC500EEC8C0 /* v1.2_champion_single.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3719FE0BC500EEC8C0 /* v1.2_champion_single.json */; };
 		9BBFAD3A19FE0E3400EEC8C0 /* v1.3_game_recent.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3919FE0E3400EEC8C0 /* v1.3_game_recent.json */; };
 		9BBFAD3C19FE168700EEC8C0 /* v1.4_summoner_name.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFAD3B19FE168700EEC8C0 /* v1.4_summoner_name.json */; };
@@ -94,6 +95,8 @@
 		9B19A022196E1122009AA715 /* RKObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKObjectMapper.m; path = Classes/RKObjectMapper.m; sourceTree = SOURCE_ROOT; };
 		9B31D3C519F5414B005E0442 /* v1.2_champions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.2_champions.json; sourceTree = "<group>"; };
 		9B31D3C619F5414B005E0442 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		9B7DE2A319FF24370025701E /* v2.5_league_summoner_id.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v2.5_league_summoner_id.json; sourceTree = "<group>"; };
+		9B7DE2A419FF24370025701E /* v1.2_champions_free.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.2_champions_free.json; sourceTree = "<group>"; };
 		9BB2BFE5196B651000D9FEAA /* RiotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB2BFEA196B651000D9FEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RiotKitDemo/main.m; sourceTree = SOURCE_ROOT; };
 		9BB2BFEC196B651000D9FEAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RiotKitDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -158,7 +161,6 @@
 		9BBFAD2D19F9F2B000EEC8C0 /* RKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKConstants.m; path = Classes/RKConstants.m; sourceTree = SOURCE_ROOT; };
 		9BBFAD3019FBD0DE00EEC8C0 /* RKTestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTestRequest.h; sourceTree = "<group>"; };
 		9BBFAD3119FBD0DE00EEC8C0 /* RKTestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTestRequest.m; sourceTree = "<group>"; };
-		9BBFAD3419FCE92100EEC8C0 /* v1.2_champions_free.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = v1.2_champions_free.json; path = ../v1.2_champions_free.json; sourceTree = "<group>"; };
 		9BBFAD3719FE0BC500EEC8C0 /* v1.2_champion_single.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.2_champion_single.json; sourceTree = "<group>"; };
 		9BBFAD3919FE0E3400EEC8C0 /* v1.3_game_recent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.3_game_recent.json; sourceTree = "<group>"; };
 		9BBFAD3B19FE168700EEC8C0 /* v1.4_summoner_name.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v1.4_summoner_name.json; sourceTree = "<group>"; };
@@ -331,6 +333,8 @@
 		9BBFAD2F19F9FE4600EEC8C0 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				9B7DE2A319FF24370025701E /* v2.5_league_summoner_id.json */,
+				9B7DE2A419FF24370025701E /* v1.2_champions_free.json */,
 				9BBFAD3B19FE168700EEC8C0 /* v1.4_summoner_name.json */,
 				9BBFAD3D19FE16D800EEC8C0 /* v1.4_summoner_id.json */,
 				9BBFAD3F19FE180100EEC8C0 /* v1.4_summoner_id_masteries.json */,
@@ -339,7 +343,6 @@
 				9BBFAD4519FE19B900EEC8C0 /* v1.4_summoner_ids_name.json */,
 				9BBFAD4719FE1A0D00EEC8C0 /* v1.4_summoner_id_runes.json */,
 				9BBFAD4919FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json */,
-				9BBFAD3419FCE92100EEC8C0 /* v1.2_champions_free.json */,
 				9BBFAD3919FE0E3400EEC8C0 /* v1.3_game_recent.json */,
 				9B31D3C519F5414B005E0442 /* v1.2_champions.json */,
 				9BBFAD3719FE0BC500EEC8C0 /* v1.2_champion_single.json */,
@@ -451,8 +454,9 @@
 				9B31D3C719F5414B005E0442 /* v1.2_champions.json in Resources */,
 				9BBFAD3A19FE0E3400EEC8C0 /* v1.3_game_recent.json in Resources */,
 				9BBFAD4219FE187500EEC8C0 /* v1.4_summoner_ids_masteries.json in Resources */,
+				9B7DE2A619FF24370025701E /* v1.2_champions_free.json in Resources */,
+				9B7DE2A519FF24370025701E /* v2.5_league_summoner_id.json in Resources */,
 				9BBFAD4619FE19B900EEC8C0 /* v1.4_summoner_ids_name.json in Resources */,
-				9BBFAD3619FCEA4C00EEC8C0 /* v1.2_champions_free.json in Resources */,
 				9BBFAD3E19FE16D800EEC8C0 /* v1.4_summoner_id.json in Resources */,
 				9BBFAD4A19FE1B9700EEC8C0 /* v1.4_summoner_ids_runes.json in Resources */,
 				9BBFAD4019FE180200EEC8C0 /* v1.4_summoner_id_masteries.json in Resources */,

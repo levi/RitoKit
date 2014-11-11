@@ -7,8 +7,9 @@
 //
 
 @import Foundation;
+#import "RKObjectMapper.h"
 
-@interface RKLeagueEntry : NSObject
+@interface RKLeagueEntry : NSObject <RKObjectMapping>
 
 @property (nonatomic, strong) NSString *division;
 @property (nonatomic, assign) BOOL isFreshBlood;
